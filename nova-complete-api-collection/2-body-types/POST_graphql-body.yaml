@@ -29,6 +29,7 @@ bodyData:
             role
           }
         }
+    graphqlVariables: '{}'
 authType: none
 isAuthOverridden: true
 authConfigData: ""
