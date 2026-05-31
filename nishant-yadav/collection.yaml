@@ -6,9 +6,14 @@ version: 1
 name: Nishant Yadav
 sortOrder: 1
 isHidden: false
-isSharedWithAI: false
-authType: none
-authConfigData: ""
-prescript: ""
-postscript: ""
-variables: []
+isSharedWithAI: true
+authType: bearer
+authConfigData: '{"bearerToken":"11111"}'
+prescript: nova.console
+postscript: nova.log
+variables:
+    - id: "CBF95E76-B5D7-4346-B8C5-7B2C413CEBC9"
+      key: "2222"
+      value: "2222"
+      order: 0
+      enabled: true
