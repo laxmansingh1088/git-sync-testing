@@ -6,6 +6,7 @@ version: 1
 name: Nishant Yadav
 sortOrder: 1
 isHidden: false
+<<<<<<< Updated upstream
 isSharedWithAI: true
 authType: bearer
 authConfigData: '{"bearerToken":"11111"}'
@@ -15,5 +16,16 @@ variables:
     - id: "CBF95E76-B5D7-4346-B8C5-7B2C413CEBC9"
       key: "2222"
       value: "2222"
+=======
+isSharedWithAI: false
+authType: none
+authConfigData: ""
+prescript: ""
+postscript: ""
+variables:
+    - id: "8BB192E5-09D8-43D2-96BB-FA511C8FB151"
+      key: nishh
+      value: "1234"
+>>>>>>> Stashed changes
       order: 0
       enabled: true
