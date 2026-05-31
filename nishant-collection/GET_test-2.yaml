@@ -7,7 +7,16 @@ name: test 2
 method: GET
 url: ""
 sortOrder: 2.8281682816
-description: ""
+description: |-
+    Retrieves a resource with a GET request. Authentication is inherited from the collection, which currently has none configured, so the call runs unauthenticated. It sends no request body. The request URL is not set yet — configure it before sending.
+
+    **When to use:** to read or fetch the resource once the endpoint URL is configured.
+
+    **Preconditions:** set the request URL before sending; no authentication required.
+
+    **Common next steps:** inspect the response body and schema; chain the result into dependent requests.
+
+    **Don't use for:** creating, updating, or deleting data — GET is read-only.
 collectionId: "319377119450759168"
 parameters: []
 headers: []

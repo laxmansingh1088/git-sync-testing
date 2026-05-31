@@ -6,7 +6,7 @@ version: 1
 name: Nishant collection
 sortOrder: 1
 isHidden: false
-isSharedWithAI: false
+isSharedWithAI: true
 authType: none
 authConfigData: ""
 prescript: ""

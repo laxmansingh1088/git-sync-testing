@@ -7,7 +7,16 @@ name: test 1
 method: DELETE
 url: www.google.com
 sortOrder: 1.82816
-description: ""
+description: |-
+    Deletes the target resource. Sends a DELETE request to `www.google.com`, authenticated with a Bearer token in the `Authorization` header. The request carries a form URL-encoded body plus a `nishhh` query parameter and header, and runs a pre-request and post-response script around the call.
+
+    **When to use:** when you need to remove the target resource and hold a valid Bearer token.
+
+    **Preconditions:** a valid Bearer token in the `Authorization` header; the target resource exists.
+
+    **Common next steps:** confirm removal with a follow-up GET; expect a 404 on subsequent reads.
+
+    **Don't use for:** read-only checks or partial edits — use GET or PATCH instead. DELETE is destructive and typically not reversible, so confirm the target before sending.
 collectionId: "319377119450759168"
 parameters:
     - id: "317923F1-A1E5-42A0-ABB8-F4124CE50A0B"
