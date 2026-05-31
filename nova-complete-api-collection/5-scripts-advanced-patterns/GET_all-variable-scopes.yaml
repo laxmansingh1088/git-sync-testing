@@ -1,0 +1,54 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
+# Restk Request
+
+id: "319413717521399835"
+version: 1
+name: All Variable Scopes
+method: GET
+url: '{{base_url}}/info'
+sortOrder: 46
+description: ""
+folderId: "319413717521399834"
+parameters: []
+headers: []
+bodyType: none
+bodyContentType: ""
+bodyData: ""
+authType: none
+isAuthOverridden: true
+authConfigData: ""
+prescript: |-
+    // RUNTIME (in-memory only)
+    nova.variables.set('tempKey', 'tempValue');
+    nova.log('runtime get:', nova.variables.get('tempKey'));
+    nova.log('runtime has:', nova.variables.has('tempKey'));
+    nova.log('runtime toObject:', JSON.stringify(nova.variables.toObject()));
+    nova.variables.unset('tempKey');
+
+    // SHORTHAND ALIASES
+    nova.setVar('alias', '99');
+    nova.log('getVar:', nova.getVar('alias'));
+    nova.log('hasVar:', nova.hasVar('alias'));
+    nova.unsetVar('alias');
+
+    // COLLECTION (persisted across requests)
+    nova.collectionVariables.set('last_run_at', nova.isoDate());
+    nova.log('collection last_run_at:', nova.collectionVariables.get('last_run_at'));
+
+    // FOLDER (persisted, folder-scoped)
+    try { nova.folderVariables.set('folder_context', 'scripts'); }
+    catch(e) { nova.warn('folderVariables:', e.message); }
+
+    // REQUEST (persisted, this request only)
+    nova.requestVariables.set('req_start_ms', String(nova.timestampMs()));
+
+    // ENVIRONMENT (requires env selected)
+    try { nova.environment.set('env_last_called', nova.isoDate()); nova.log('env base_url:', nova.environment.get('base_url')); }
+    catch(e) { nova.warn('environment:', e.message); }
+postscript: |-
+    const startMs = parseInt(nova.requestVariables.get('req_start_ms') || '0');
+    nova.log('Request duration:', (nova.timestampMs() - startMs) + 'ms');
+    const data = nova.response.json();
+    if (data && data.id) nova.variables.set('last_resource_id', String(data.id));
+skipParentScripts: false
+variables: []

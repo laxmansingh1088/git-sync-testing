@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
+# Restk Request
+
+id: "319413717521399836"
+version: 1
+name: Crypto Functions (All)
+method: GET
+url: '{{base_url}}/secure-data'
+sortOrder: 1
+description: ""
+folderId: "319413717521399834"
+parameters: []
+headers: []
+bodyType: none
+bodyContentType: ""
+bodyData: ""
+authType: none
+isAuthOverridden: true
+authConfigData: ""
+prescript: |-
+    const text = 'hello world'; const key = 'my_secret';
+
+    // Hash — full API
+    nova.log('md5:   ', nova.crypto.md5(text));
+    nova.log('sha256:', nova.crypto.sha256(text));
+    nova.log('sha512:', nova.crypto.sha512(text));
+
+    // Hash — shorthand
+    nova.log('md5 short:   ', nova.md5(text));
+    nova.log('sha256 short:', nova.sha256(text));
+    nova.log('sha512 short:', nova.sha512(text));
+
+    // HMAC — full API
+    nova.log('hmacSha256:', nova.crypto.hmacSha256(text, key));
+    nova.log('hmacSha512:', nova.crypto.hmacSha512(text, key));
+
+    // HMAC — shorthand (both casings)
+    nova.log('hmacSha256 short:', nova.hmacSha256(text, key));
+    nova.log('hmacSHA256 alt:  ', nova.hmacSHA256(text, key));
+    nova.log('hmacSha512 short:', nova.hmacSha512(text, key));
+    nova.log('hmacSHA512 alt:  ', nova.hmacSHA512(text, key));
+
+    // Base64 — full + shorthand + global
+    const enc = nova.crypto.base64Encode(text);
+    nova.log('base64Encode:', enc);
+    nova.log('base64Decode:', nova.crypto.base64Decode(enc));
+    nova.log('short encode:', nova.base64Encode(text));
+    nova.log('btoa/atob:   ', atob(btoa(text)));
+
+    // Request signing example
+    const secret = nova.variables.get('api_key') || 'secret';
+    const ts = String(nova.timestamp());
+    const sig = nova.crypto.hmacSha256(
+        nova.request.method + nova.request.url + ts + nova.crypto.sha256(nova.request.body || ''),
+        secret
+    );
+    nova.request.setHeader('X-Timestamp', ts);
+    nova.request.setHeader('X-Signature', sig);
+    nova.log('Request signed.');
+postscript: ""
+skipParentScripts: false
+variables: []

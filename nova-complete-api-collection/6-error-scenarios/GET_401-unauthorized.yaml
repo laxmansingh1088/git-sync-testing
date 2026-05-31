@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
+# Restk Request
+
+id: "319413717521399843"
+version: 1
+name: 401 - Unauthorized
+method: GET
+url: '{{base_url}}/me'
+sortOrder: 1
+description: ""
+folderId: "319413717521399841"
+parameters: []
+headers: []
+bodyType: none
+bodyContentType: ""
+bodyData: ""
+authType: none
+isAuthOverridden: true
+authConfigData: ""
+prescript: ""
+postscript: |-
+    nova.test('Status 401', function() { nova.expect(nova.response.status).toBe(401); });
+    nova.test('WWW-Authenticate present', function() { nova.expect(nova.response.getHeader('WWW-Authenticate')).toBeDefined(); });
+skipParentScripts: false
+variables: []

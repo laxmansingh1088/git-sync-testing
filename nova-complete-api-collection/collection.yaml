@@ -1,0 +1,168 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/collection.schema.json
+# Restk Collection
+
+id: "319413717513011200"
+version: 1
+name: Nova Complete API Collection
+sortOrder: 1
+isHidden: false
+isSharedWithAI: false
+authType: bearer
+authConfigData: '{"bearerToken":"{{access_token}}"}'
+prescript: |-
+    // ── COLLECTION PRE-SCRIPT (runs before every request) ─────────────
+
+    // 1. Auto-switch base_url based on ENV variable
+    const envName = nova.variables.get('ENV') || 'development';
+    const envUrls = {
+        development: 'http://localhost:3000',
+        staging:     'https://staging-api.example.com',
+        production:  'https://api.example.com'
+    };
+    if (envUrls[envName]) {
+        nova.variables.set('base_url', envUrls[envName]);
+    }
+
+    // 2. Token expiry warning
+    const expiresAt = parseInt(nova.variables.get('token_expires_at') || '0');
+    if (expiresAt > 0 && nova.timestamp() > expiresAt - 60) {
+        nova.warn('[Collection] Token expired or expiring soon — run Auth > Get OAuth2 Token.');
+    }
+
+    // 3. Auto-inject headers on every request
+    nova.request.setHeader('X-Request-ID', nova.uuid());
+    nova.request.setHeader('X-Timestamp',  String(nova.timestamp()));
+
+    nova.log('[PRE] ' + nova.request.method + ' ' + nova.request.url + ' | ENV: ' + envName);
+postscript: |-
+    // ── COLLECTION POST-SCRIPT (runs after every request) ─────────────
+
+    // 1. Global assertion — no 5xx
+    nova.test('[Global] No 5xx error', function() {
+        nova.expect(nova.response.status).toBeLessThan(500);
+    });
+
+    // 2. Auto-capture ETag if present
+    const etag = nova.response.getHeader('ETag');
+    if (etag) nova.variables.set('etag', etag);
+
+    nova.log('[POST] Status:', nova.response.status, '| Time:', nova.response.responseTime + 'ms', '| Size:', nova.response.size + 'B');
+variables:
+    - id: "6592CA95-7AAB-5E2E-BA9C-0CADB33EB1BE"
+      key: ENV
+      value: development
+      order: 0
+      enabled: true
+    - id: "E8A0C957-1064-56DE-ADC0-BBA6DA7CC6A8"
+      key: base_url
+      value: http://localhost:3000
+      order: 1
+      enabled: true
+    - id: "EB1B7C96-8333-5EBC-B83A-12C3A9E88818"
+      key: access_token
+      order: 2
+      enabled: true
+    - id: "E3EC82E4-973C-5048-847E-3FB497C3BD29"
+      key: refresh_token
+      order: 3
+      enabled: true
+    - id: "ACF50AE6-C2D6-51D6-93A1-C5965A145A4F"
+      key: token_expires_at
+      order: 4
+      enabled: true
+    - id: "78E440AA-3430-5E79-B1C0-48E135558318"
+      key: user_id
+      order: 5
+      enabled: true
+    - id: "180A266C-1857-5B94-AEF8-42FC713BB7B7"
+      key: api_key
+      value: YOUR_API_KEY_HERE
+      order: 6
+      enabled: true
+    - id: "37D141EA-904B-5895-B462-55E11E227A9A"
+      key: client_id
+      value: YOUR_CLIENT_ID
+      order: 7
+      enabled: true
+    - id: "FC9BD20A-1684-5449-A1D2-26F5E60BDE90"
+      key: client_secret
+      value: YOUR_CLIENT_SECRET
+      order: 8
+      enabled: true
+    - id: "B42284A8-150C-5196-BD98-FFD9EB06364B"
+      key: username
+      value: testuser@example.com
+      order: 9
+      enabled: true
+    - id: "997876BE-17C0-585D-91B3-4FC413697920"
+      key: password
+      value: TestPassword123!
+      order: 10
+      enabled: true
+    - id: "16D06E88-9C62-5BB5-A179-13AFF5BAFAF2"
+      key: jwt_secret
+      value: YOUR_JWT_SECRET
+      order: 11
+      enabled: true
+    - id: "D51F2F93-A203-5A5C-8B26-EBD124B065E6"
+      key: aws_access_key
+      value: YOUR_AWS_ACCESS_KEY_ID
+      order: 12
+      enabled: true
+    - id: "6A70A086-AF3E-50F4-9563-6C8E80E8A418"
+      key: aws_secret_key
+      value: YOUR_AWS_SECRET_ACCESS_KEY
+      order: 13
+      enabled: true
+    - id: "294D20E1-19DA-50BE-93F1-51FB4C67B1D7"
+      key: aws_region
+      value: us-east-1
+      order: 14
+      enabled: true
+    - id: "3EEA0E7B-295A-53DF-935D-338DA9460935"
+      key: aws_service
+      value: execute-api
+      order: 15
+      enabled: true
+    - id: "48F7B3AD-5357-5B69-831F-1ACBCAB0E82C"
+      key: hawk_id
+      value: YOUR_HAWK_ID
+      order: 16
+      enabled: true
+    - id: "85DC7EF3-C100-51B8-BB44-619380749B40"
+      key: hawk_key
+      value: YOUR_HAWK_KEY
+      order: 17
+      enabled: true
+    - id: "1BAA8B22-FAFE-5E4C-BC69-5FAEEC7B53DE"
+      key: oauth1_consumer_key
+      value: YOUR_CONSUMER_KEY
+      order: 18
+      enabled: true
+    - id: "76A6F9B2-3EDC-52B5-8107-81692DAE041A"
+      key: oauth1_consumer_secret
+      value: YOUR_CONSUMER_SECRET
+      order: 19
+      enabled: true
+    - id: "B60D654B-4B9A-5AA2-8984-C6AAE4A53950"
+      key: oauth1_token
+      value: YOUR_OAUTH1_TOKEN
+      order: 20
+      enabled: true
+    - id: "475281DD-302A-5ED9-A58C-352A215F9A39"
+      key: oauth1_token_secret
+      value: YOUR_OAUTH1_TOKEN_SECRET
+      order: 21
+      enabled: true
+    - id: "63BA47EF-E3FE-54A6-88CF-490C4CC3F7BD"
+      key: etag
+      order: 22
+      enabled: true
+    - id: "4A19E094-F4A7-5EBF-A464-BBD11F1607AB"
+      key: next_cursor
+      order: 23
+      enabled: true
+    - id: "517DF595-D5BA-5929-AB74-DDA5100CEA8C"
+      key: dynamic_email
+      order: 24
+      enabled: true

@@ -1,0 +1,38 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
+# Restk Request
+
+id: "319413717521399837"
+version: 1
+name: All Test Matchers
+method: GET
+url: '{{base_url}}/info'
+sortOrder: 2
+description: ""
+folderId: "319413717521399834"
+parameters: []
+headers: []
+bodyType: none
+bodyContentType: ""
+bodyData: ""
+authType: none
+isAuthOverridden: true
+authConfigData: ""
+prescript: ""
+postscript: |-
+    const data = nova.response.json() || {};
+    nova.test('.toBe()',            function() { nova.expect(nova.response.status).toBe(200); });
+    nova.test('.toEqual()',         function() { nova.expect(nova.response.status).toEqual(200); });
+    nova.test('.toBeDefined()',     function() { nova.expect(nova.response.body).toBeDefined(); });
+    nova.test('.toBeUndefined()',   function() { nova.expect(data.noSuchField).toBeUndefined(); });
+    nova.test('.toBeNull()',        function() { nova.expect(data.nullField || null).toBeNull(); });
+    nova.test('.toBeNotNull()',     function() { nova.expect(nova.response.status).toBeNotNull(); });
+    nova.test('.toBeTruthy()',      function() { nova.expect(nova.response.status).toBeTruthy(); });
+    nova.test('.toBeFalsy()',       function() { nova.expect(0).toBeFalsy(); nova.expect('').toBeFalsy(); });
+    nova.test('.toBeGreaterThan()', function() { nova.expect(nova.response.responseTime).toBeGreaterThan(0); });
+    nova.test('.toBeLessThan()',    function() { nova.expect(nova.response.responseTime).toBeLessThan(10000); });
+    nova.test('.toContain()',       function() { nova.expect(nova.response.getHeader('Content-Type')).toContain('json'); });
+    nova.test('.toHaveLength()',    function() { nova.expect('hello').toHaveLength(5); });
+    nova.test('.toMatch(regex)',    function() { nova.expect(nova.response.getHeader('Content-Type')||'').toMatch(/application\/json/); });
+    nova.test('.not.toBe()',        function() { nova.expect(nova.response.status).not.toBe(404); nova.expect(nova.response.status).not.toBe(500); });
+skipParentScripts: false
+variables: []

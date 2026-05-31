@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
+# Restk Request
+
+id: "319413717521399824"
+version: 1
+name: Hawk Auth
+method: GET
+url: '{{base_url}}/hawk/resource'
+sortOrder: 9
+description: ""
+folderId: "319413717521399814"
+parameters: []
+headers: []
+bodyType: none
+bodyContentType: ""
+bodyData: ""
+authType: hawk
+isAuthOverridden: true
+authConfigData: '{"hawk":{"algorithm":"sha256","hawkId":"{{hawk_id}}","hawkKey":"{{hawk_key}}"}}'
+prescript: nova.request.setHawkAuth(nova.variables.get('hawk_id'), nova.variables.get('hawk_key'));
+postscript: ""
+skipParentScripts: false
+variables: []

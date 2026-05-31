@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/folder.schema.json
+# Restk Folder
+
+id: "319413717513011206"
+version: 1
+name: 1. HTTP Methods
+sortOrder: 1
+parentCollectionId: "319413717513011200"
+authType: none
+isAuthOverridden: false
+authConfigData: ""
+prescript: ""
+postscript: ""
+variables: []

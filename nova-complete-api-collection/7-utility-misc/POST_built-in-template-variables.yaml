@@ -1,0 +1,43 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
+# Restk Request
+
+id: "319413717525594116"
+version: 1
+name: Built-in Template Variables
+method: POST
+url: '{{base_url}}/echo'
+sortOrder: 1
+description: ""
+folderId: "319413717525594114"
+parameters: []
+headers:
+    - id: "D41BE020-06FA-43D7-A967-F70478B9BDF1"
+      key: Content-Type
+      value: application/json
+      isEnabled: true
+      isSecret: false
+      order: 0
+bodyType: raw
+bodyContentType: json
+bodyData:
+    rawJSON: |-
+        {
+          "request_id":    "{{$guid}}",
+          "timestamp":     "{{$isoTimestamp}}",
+          "random_number": "{{$randomInt}}",
+          "random_email":  "user_{{$randomInt}}@example.com"
+        }
+authType: none
+isAuthOverridden: true
+authConfigData: ""
+prescript: |-
+    nova.log('uuid:        ', nova.uuid());
+    nova.log('guid:        ', nova.guid());
+    nova.log('timestamp:   ', nova.timestamp());
+    nova.log('timestampMs: ', nova.timestampMs());
+    nova.log('isoDate:     ', nova.isoDate());
+    nova.log('isoTimestamp:', nova.isoTimestamp());
+    nova.log('randomInt:   ', nova.randomInt(1, 1000));
+postscript: ""
+skipParentScripts: false
+variables: []

@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
+# Restk Request
+
+id: "319413717521399840"
+version: 1
+name: Update Collection + Folder Auth
+method: GET
+url: '{{base_url}}/me'
+sortOrder: 5
+description: ""
+folderId: "319413717521399834"
+parameters: []
+headers: []
+bodyType: none
+bodyContentType: ""
+bodyData: ""
+authType: none
+isAuthOverridden: true
+authConfigData: ""
+prescript: |-
+    // Update collection-level auth from stored token
+    const token = nova.variables.get('access_token');
+    if (token) { nova.collectionAuth.setBearerToken(token); nova.log('Collection Bearer updated.'); }
+
+    // Set folder-level API Key
+    try {
+        nova.folderAuth.setApiKey('X-API-Key', nova.variables.get('api_key'), 'header');
+        nova.log('Folder API key set.');
+    } catch(e) { nova.warn('folderAuth unavailable:', e.message); }
+postscript: ""
+skipParentScripts: false
+variables: []

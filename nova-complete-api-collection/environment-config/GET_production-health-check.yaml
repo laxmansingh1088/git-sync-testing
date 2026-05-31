@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
+# Restk Request
+
+id: "319413717513011205"
+version: 1
+name: Production - Health Check
+method: GET
+url: '{{base_url}}/health'
+sortOrder: 3
+description: ""
+folderId: "319413717513011201"
+parameters: []
+headers: []
+bodyType: none
+bodyContentType: ""
+bodyData: ""
+authType: none
+isAuthOverridden: true
+authConfigData: ""
+prescript: |-
+    nova.variables.set('ENV', 'production');
+    nova.log('Switched to PRODUCTION environment.');
+postscript: |-
+    nova.test('Production health OK', function() { nova.expect(nova.response.status).toBe(200); });
+    nova.log('base_url:', nova.variables.get('base_url'));
+skipParentScripts: false
+variables: []

@@ -1,0 +1,54 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
+# Restk Request
+
+id: "319413717521399833"
+version: 1
+name: Pagination Headers
+method: GET
+url: '{{base_url}}/items'
+sortOrder: 3
+description: ""
+folderId: "319413717521399829"
+parameters:
+    - id: "B65F80F4-F22F-4417-B2FF-0F8C88DC5377"
+      key: page
+      value: "1"
+      isEnabled: true
+      order: 0
+    - id: "C32F1A86-0C67-4422-A8BA-1C5A16B836E7"
+      key: limit
+      value: "25"
+      isEnabled: true
+      order: 1
+headers:
+    - id: "84568A63-A370-428D-9DE3-23BB36E6C507"
+      key: X-Page
+      value: "1"
+      isEnabled: true
+      isSecret: false
+      order: 0
+    - id: "52144F4C-0727-404D-8913-82EC615758A8"
+      key: X-Limit
+      value: "25"
+      isEnabled: true
+      isSecret: false
+      order: 1
+    - id: "130EE2A5-4DA1-495A-90B1-186C859280EA"
+      key: X-Cursor
+      value: '{{next_cursor}}'
+      isEnabled: true
+      isSecret: false
+      order: 2
+bodyType: none
+bodyContentType: ""
+bodyData: ""
+authType: none
+isAuthOverridden: true
+authConfigData: ""
+prescript: ""
+postscript: |-
+    const nextCursor = nova.response.getHeader('X-Next-Cursor');
+    if (nextCursor) { nova.variables.set('next_cursor', nextCursor); nova.log('Next cursor:', nextCursor); }
+    nova.log('Total count:', nova.response.getHeader('X-Total-Count'));
+skipParentScripts: false
+variables: []

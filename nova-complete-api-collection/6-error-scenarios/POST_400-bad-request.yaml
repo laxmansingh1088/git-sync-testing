@@ -1,0 +1,33 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
+# Restk Request
+
+id: "319413717521399842"
+version: 1
+name: 400 - Bad Request
+method: POST
+url: '{{base_url}}/users'
+sortOrder: 53
+description: ""
+folderId: "319413717521399841"
+parameters: []
+headers:
+    - id: "E7061DA6-BA6E-4C21-AF82-62FEE8612D81"
+      key: Content-Type
+      value: application/json
+      isEnabled: true
+      isSecret: false
+      order: 0
+bodyType: raw
+bodyContentType: json
+bodyData:
+    rawJSON: '{ "invalid_field": true }'
+authType: none
+isAuthOverridden: true
+authConfigData: ""
+prescript: ""
+postscript: |-
+    nova.test('Status 400', function() { nova.expect(nova.response.status).toBe(400); });
+    const data = nova.response.json();
+    nova.test('Error message present', function() { nova.expect(data.error || data.message).toBeDefined(); });
+skipParentScripts: false
+variables: []
