@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/environment.schema.json
+# Restk Environment
+
+id: "319407381702246400"
+version: 1
+name: nISHNT ghp_uoR12SMGzvDG2KgT5I9Mugr2C0CQsu3yI9uN
+variables:
+    - id: "319407470650851328"
+      key: ghp_uoR12SMGzvDG2KgT5I9Mugr2C0CQsu3yI9uN
+      value: ghp_uoR12SMGzvDG2KgT5I9Mugr2C0CQsu3yI9uN
+      type: default
+      enabled: true
+    - id: "319407499918704640"
+      key: ghp_uoR12SMGzvDG2KgT5I9Mugr2C0CQsu3yI9uN
+      type: secret
+      enabled: true
+    - id: "319407525105500160"
+      key: ghp_uoR12SMGzvDG2KgT5I9Mugr2C0CQsu3yI9uN
+      value: ghp_uoR12SMGzvDG2KgT5I9Mugr2C0CQsu3yI9uN
+      type: default
+      enabled: false
