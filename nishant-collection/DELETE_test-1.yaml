@@ -1,0 +1,45 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
+# Restk Request
+
+id: "319379623534133248"
+version: 1
+name: test 1
+method: DELETE
+url: www.google.com
+sortOrder: 1.82816
+description: ""
+collectionId: "319377119450759168"
+parameters:
+    - id: "317923F1-A1E5-42A0-ABB8-F4124CE50A0B"
+      key: nishhh
+      value: "1234"
+      isEnabled: true
+      order: 0
+headers:
+    - id: "594FFA0C-F05E-4ECA-B04D-1AB8C90519AB"
+      key: nishhh
+      value: "1234"
+      isEnabled: true
+      isSecret: false
+      order: 0
+bodyType: x_www_form_urlencoded
+bodyContentType: ""
+bodyData:
+    urlEncodedFields:
+        - id: 05F22FAF-5B4D-4D87-AD78-155A053E3AFE
+          isEnabled: true
+          isSecret: false
+          key: nishhh
+          value: "1234"
+authType: bearer
+isAuthOverridden: true
+authConfigData: '{"bearerToken":"{{nishh}}"}'
+prescript: "[\n  \n  {\n    \n    user = nishant\n    \n  }\n  \n  \n]\n\n\n\n"
+postscript: "[\n  \n  {\n    \n    user = nishant\n    \n  }\n  \n  \n]\n"
+skipParentScripts: false
+variables:
+    - id: "233ACC61-A967-4367-A96F-897943E41495"
+      key: nishhh
+      value: "1234"
+      order: 0
+      enabled: true

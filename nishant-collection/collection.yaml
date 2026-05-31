@@ -11,4 +11,9 @@ authType: none
 authConfigData: ""
 prescript: ""
 postscript: ""
-variables: []
+variables:
+    - id: "AB45B219-3BB0-4F44-AB8A-BAD1F99F67BD"
+      key: nishh
+      value: "1234"
+      order: 0
+      enabled: true
