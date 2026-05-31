@@ -6,9 +6,9 @@ version: 1
 name: CHILD REQ
 method: DELETE
 url: '{{ghp_uoR12SMGzvDG2KgT5I9Mugr2C0CQsu3yI9uN}}{{BASE_URL}}'
-sortOrder: 1.82816
+sortOrder: 0.9640882816
 description: '{{ghp_uoR12SMGzvDG2KgT5I9Mugr2C0CQsu3yI9uN'
-folderId: "319407655904870400"
+collectionId: "319406106914848768"
 parameters:
     - id: "D7A1513A-80AA-4AB6-9457-BD35923D366D"
       key: '{{BASE_URL}}'
