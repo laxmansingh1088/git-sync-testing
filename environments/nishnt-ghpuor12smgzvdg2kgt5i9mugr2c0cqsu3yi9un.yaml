@@ -19,3 +19,7 @@ variables:
       value: ghp_uoR12SMGzvDG2KgT5I9Mugr2C0CQsu3yI9uN
       type: default
       enabled: false
+    - id: "319412139502600192"
+      key: baseeurl
+      type: secret
+      enabled: true
