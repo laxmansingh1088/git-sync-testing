@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
+# Restk Request
+
+id: "319413494514450434"
+version: 1
+name: PUT Request
+method: PUT
+url: '{{base_url}}/put'
+sortOrder: 5
+description: ""
+folderId: "319413494510256129"
+parameters: []
+headers: []
+bodyType: raw
+bodyContentType: text
+bodyData:
+    rawText: '{"id": 1, "name": "Updated Item"}'
+authType: none
+isAuthOverridden: true
+authConfigData: ""
+prescript: ""
+postscript: ""
+skipParentScripts: false
+variables: []

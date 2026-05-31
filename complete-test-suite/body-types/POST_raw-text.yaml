@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
+# Restk Request
+
+id: "319413494514450443"
+version: 1
+name: Raw Text
+method: POST
+url: '{{base_url}}/post'
+sortOrder: 14
+description: ""
+folderId: "319413494514450439"
+parameters: []
+headers: []
+bodyType: raw
+bodyContentType: text
+bodyData:
+    rawText: This is plain text content from RESTk testing.
+authType: none
+isAuthOverridden: true
+authConfigData: ""
+prescript: ""
+postscript: ""
+skipParentScripts: false
+variables: []

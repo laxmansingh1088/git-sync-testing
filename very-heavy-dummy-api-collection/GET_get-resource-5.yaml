@@ -1,0 +1,40 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
+# Restk Request
+
+id: "319413613431357440"
+version: 1
+name: GET - Resource 5
+method: GET
+url: https://api.example.com/v1/resources/5
+sortOrder: 8
+description: ""
+collectionId: "319413613427163136"
+parameters:
+    - id: "8ADB8B31-3725-4B8A-B973-10AD9F667BE1"
+      key: debug
+      value: "true"
+      isEnabled: true
+      order: 0
+headers:
+    - id: "98163631-F4EA-4118-9340-A24909D18D4F"
+      key: Accept
+      value: application/json
+      isEnabled: true
+      isSecret: false
+      order: 0
+    - id: "F4363E58-8585-4192-A333-6432E9EBD363"
+      key: X-Request-Id
+      value: req-005
+      isEnabled: true
+      isSecret: false
+      order: 1
+bodyType: none
+bodyContentType: ""
+bodyData: ""
+authType: bearer
+isAuthOverridden: true
+authConfigData: '{"bearerToken":"dummy_token_123"}'
+prescript: ""
+postscript: ""
+skipParentScripts: false
+variables: []

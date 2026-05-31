@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
+# Restk Request
+
+id: "319413494514450446"
+version: 1
+name: Form Data (Multipart)
+method: POST
+url: '{{base_url}}/post'
+sortOrder: 17
+description: ""
+folderId: "319413494514450439"
+parameters: []
+headers: []
+bodyType: none
+bodyContentType: ""
+bodyData: ""
+authType: none
+isAuthOverridden: true
+authConfigData: ""
+prescript: ""
+postscript: ""
+skipParentScripts: false
+variables: []

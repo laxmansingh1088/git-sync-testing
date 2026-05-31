@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
+# Restk Request
+
+id: "319413494514450456"
+version: 1
+name: Bearer Token - No Auth
+method: GET
+url: '{{base_url}}/bearer'
+sortOrder: 27
+description: ""
+folderId: "319413494514450451"
+parameters: []
+headers: []
+bodyType: none
+bodyContentType: ""
+bodyData: ""
+authType: none
+isAuthOverridden: true
+authConfigData: ""
+prescript: ""
+postscript: ""
+skipParentScripts: false
+variables: []

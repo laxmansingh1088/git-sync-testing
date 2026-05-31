@@ -1,0 +1,38 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
+# Restk Request
+
+id: "319413494514450440"
+version: 1
+name: Raw JSON
+method: POST
+url: '{{base_url}}/post'
+sortOrder: 11
+description: ""
+folderId: "319413494514450439"
+parameters: []
+headers: []
+bodyType: raw
+bodyContentType: text
+bodyData:
+    rawText: |-
+        {
+          "string": "hello",
+          "number": 42,
+          "float": 3.14,
+          "boolean": true,
+          "null_value": null,
+          "array": [1, 2, 3],
+          "nested": {
+            "key": "value",
+            "deep": {
+              "level": 3
+            }
+          }
+        }
+authType: none
+isAuthOverridden: true
+authConfigData: ""
+prescript: ""
+postscript: ""
+skipParentScripts: false
+variables: []

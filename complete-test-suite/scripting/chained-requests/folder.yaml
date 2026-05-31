@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/folder.schema.json
+# Restk Folder
+
+id: "319413494518644758"
+version: 1
+name: Chained Requests
+sortOrder: 54
+parentCollectionId: "319413494510256128"
+parentFolderId: "319413494518644755"
+authType: none
+isAuthOverridden: false
+authConfigData: ""
+prescript: ""
+postscript: ""
+variables: []
