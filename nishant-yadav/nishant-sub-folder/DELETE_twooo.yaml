@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
+# Restk Request
+
+id: "319347992236654592"
+version: 1
+name: twooo
+method: DELETE
+url: ""
+sortOrder: 2.8281682816
+description: ""
+folderId: "319347894719086592"
+parameters: []
+headers: []
+bodyType: none
+bodyContentType: ""
+bodyData: ""
+authType: inherit
+isAuthOverridden: false
+authConfigData: ""
+prescript: ""
+postscript: ""
+skipParentScripts: false
+variables: []
