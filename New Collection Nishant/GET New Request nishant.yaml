@@ -5,19 +5,51 @@ id: "322066416251437056"
 version: 1
 name: GET New Request nishant
 method: DELETE
-url: ""
+url: nishhh
 sortOrder: 1.82816
-description: ""
+description: nishhhnishhh
+intentAnnotation:
+    whenToUse: nishhhnishhh
+    preconditions:
+        - nishhhnishhh
+    commonNextSteps:
+        - nishhhnishhh
+    doNotUseFor: nishhhnishhh
 collectionId: "322066351214559232"
-parameters: []
-headers: []
-bodyType: none
-bodyContentType: ""
-bodyData: ""
-authType: inherit
-isAuthOverridden: false
-authConfigData: ""
-prescript: ""
-postscript: ""
+parameters:
+    - id: "89B7FDF0-C032-4DFC-959A-976AF2B94A99"
+      key: nishhh
+      value: nishhh
+      isEnabled: true
+      order: 0
+    - id: "BC1D5851-9215-4425-B943-C9C96260A075"
+      key: nishhh
+      value: ""
+      isEnabled: false
+      order: 1
+headers:
+    - id: "CDE877B6-F52D-4082-BAD1-297A84DA221F"
+      key: nishhh
+      value: nishhh
+      isEnabled: true
+      isSecret: false
+      order: 0
+bodyType: raw
+bodyContentType: html
+bodyData:
+    rawHTML: nishhh
+authType: bearer
+isAuthOverridden: true
+authConfigData: |-
+    {
+      "bearerToken": "nishhh{{nishhhnishhh}}"
+    }
+prescript: nishhhnishhh
+postscript: nishhhnishhh
 skipParentScripts: false
-variables: []
+variables:
+    - id: "EE6C15CB-C590-4476-837E-A96F50774C4D"
+      key: nishhh
+      value: nishhh
+      order: 0
+      enabled: true
