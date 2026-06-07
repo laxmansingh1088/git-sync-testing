@@ -3,8 +3,8 @@
 
 id: "322066416251437056"
 version: 1
-name: GET New Request nishant
-method: DELETE
+name: GET New Request nishant added
+method: PATCH
 url: nishhh
 sortOrder: 1.82816
 description: nishhhnishhh
@@ -38,11 +38,16 @@ bodyType: raw
 bodyContentType: html
 bodyData:
     rawHTML: nishhh
-authType: bearer
+authType: wssUsernameToken
 isAuthOverridden: true
 authConfigData: |-
     {
-      "bearerToken": "nishhh{{nishhhnishhh}}"
+      "bearerToken": "nishhh{{nishhhnishhh}}",
+      "wssUsernameToken": {
+        "mode": "passwordText",
+        "password": "nnnnnnn",
+        "username": "nnnnnn"
+      }
     }
 prescript: nishhhnishhh
 postscript: nishhhnishhh
