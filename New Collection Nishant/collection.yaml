@@ -6,9 +6,22 @@ version: 1
 name: New Collection Nishant
 sortOrder: 6
 isHidden: false
-isSharedWithAI: false
-authType: none
-authConfigData: ""
-prescript: ""
-postscript: ""
-variables: []
+isSharedWithAI: true
+authType: oauth2
+authConfigData: |-
+    {
+      "oauth2": {
+        "clientId": "nishhh",
+        "clientSecret": "nishhh",
+        "scope": "nishhh",
+        "tokenURL": "nishhh"
+      }
+    }
+prescript: nishhhnishhh
+postscript: nishhhnishhh
+variables:
+    - id: "F6EB55D8-8E32-48D2-B773-5D4FC28E2E65"
+      key: nishhhnishhh
+      value: nishhhnishhh
+      order: 0
+      enabled: true
