@@ -57,9 +57,9 @@ headers:
       isSecret: false
       order: 2
 bodyType: raw
-bodyContentType: text
+bodyContentType: xml
 bodyData:
-    rawText: Laxman
+    rawXML: <<<<laxman>>>>
 authType: wssUsernameToken
 isAuthOverridden: true
 authConfigData: |-
