@@ -58,14 +58,15 @@ headers:
       order: 2
 bodyType: raw
 bodyContentType: text
-bodyData: ""
+bodyData:
+    rawText: Laxman
 authType: wssUsernameToken
 isAuthOverridden: true
 authConfigData: |-
     {
       "bearerToken": "nishhh{{nishhhnishhh}}",
       "wssUsernameToken": {
-        "mode": "timestampOnly",
+        "mode": "passwordText",
         "password": "nnnnnnn",
         "username": "nnnnnn"
       }
