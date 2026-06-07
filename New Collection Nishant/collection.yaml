@@ -6,9 +6,22 @@ version: 1
 name: New Collection Nishant
 sortOrder: 6
 isHidden: false
-isSharedWithAI: false
-authType: none
-authConfigData: ""
-prescript: ""
-postscript: ""
-variables: []
+isSharedWithAI: true
+authType: bearer
+authConfigData: |-
+    {
+      "bearerToken": "lax"
+    }
+prescript: laxman-pre
+postscript: laxman-post
+variables:
+    - id: "ED81B902-9511-4A87-9678-D33977E7743A"
+      key: lax1-Var-Coll
+      value: lax1-Var-Coll
+      order: 0
+      enabled: true
+    - id: "B02238FD-372E-41E4-AF4F-DE5CE41B0BD4"
+      key: lax2-Var-Coll
+      value: lax2-Var-Coll
+      order: 1
+      enabled: true
