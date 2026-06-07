@@ -1,14 +1,14 @@
 # yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
 # Restk Request
 
-id: "322050440139112452"
+id: "322065319617101827"
 version: 1
 name: HEAD_head-check-resource-exists
 method: HEAD
 url: '{{base_url}}/users/{{user_id}}'
 sortOrder: 6
 description: ""
-folderId: "322050440118140936"
+folderId: "322065319604518920"
 parameters: []
 headers: []
 bodyType: none

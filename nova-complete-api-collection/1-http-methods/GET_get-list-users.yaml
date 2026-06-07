@@ -1,14 +1,14 @@
 # yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
 # Restk Request
 
-id: "322050440139112450"
+id: "322065319617101825"
 version: 1
 name: GET_get-list-users
 method: GET
 url: '{{base_url}}/users'
 sortOrder: 8
 description: ""
-folderId: "322050440118140936"
+folderId: "322065319604518920"
 parameters:
     - id: "421CE9E8-30E1-4EC7-992C-FA0F7AA97BAE"
       key: page

@@ -1,14 +1,14 @@
 # yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
 # Restk Request
 
-id: "322050440143306771"
+id: "322065319621296132"
 version: 1
 name: GET_pagination-headers
 method: GET
 url: '{{base_url}}/items'
 sortOrder: 3
 description: ""
-folderId: "322050440118140939"
+folderId: "322065319604518923"
 parameters:
     - id: "B65F80F4-F22F-4417-B2FF-0F8C88DC5377"
       key: page

@@ -1,14 +1,14 @@
 # yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
 # Restk Request
 
-id: "322050440151695379"
+id: "322065319625490452"
 version: 1
 name: POST_ntlm-auth-requires-local-server
 method: POST
 url: http://localhost:8080/api/resource
 sortOrder: 47
 description: ""
-folderId: "322050440118140944"
+folderId: "322065319604518928"
 parameters: []
 headers: []
 bodyType: raw

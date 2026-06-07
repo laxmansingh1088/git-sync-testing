@@ -1,14 +1,14 @@
 # yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
 # Restk Request
 
-id: "322050440147501069"
+id: "322065319621296146"
 version: 1
 name: GET_sandbox-security-check
 method: GET
 url: '{{base_url}}/info'
 sortOrder: 2
 description: ""
-folderId: "322050440118140942"
+folderId: "322065319604518926"
 parameters: []
 headers: []
 bodyType: none

@@ -1,14 +1,14 @@
 # yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
 # Restk Request
 
-id: "322050440130723848"
+id: "322065319608713231"
 version: 1
 name: POST_post-create-resource-14
 method: POST
 url: https://api.example.com/v1/resources
 sortOrder: 27
 description: ""
-collectionId: "322050440113946625"
+collectionId: "322065319600324612"
 parameters: []
 headers:
     - id: "36B70C97-B2A8-4D5A-8C42-AB849EFD1FFB"

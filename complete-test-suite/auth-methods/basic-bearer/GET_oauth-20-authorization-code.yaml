@@ -1,14 +1,14 @@
 # yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
 # Restk Request
 
-id: "322050440151695376"
+id: "322065319625490449"
 version: 1
 name: GET_oauth-20-authorization-code
 method: GET
 url: https://demo.duendesoftware.com/api/test
 sortOrder: 34
 description: ""
-folderId: "322050440118140944"
+folderId: "322065319604518928"
 parameters: []
 headers: []
 bodyType: none

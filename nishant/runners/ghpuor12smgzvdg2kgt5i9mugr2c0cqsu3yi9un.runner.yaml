@@ -1,11 +1,11 @@
 # yaml-language-server: $schema=https://restk.ai/schema/v1/runner-preset.schema.json
 # Restk Runner Preset
 
-id: "322050440151695381"
+id: "322065319625490454"
 version: 1
 name: ghpuor12smgzvdg2kgt5i9mugr2c0cqsu3yi9un
 description: ghp_uoR12SMGzvDG2KgT5I9Mugr2C0CQsu3yI9uN
-collectionId: "322050440109752321"
+collectionId: "322065319600324610"
 folderId: null
 executionMode: Sequential
 delayBetweenRequests: 0

@@ -1,14 +1,14 @@
 # yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
 # Restk Request
 
-id: "322050440147501060"
+id: "322065319621296137"
 version: 1
 name: POST_login-store-token-chained
 method: POST
 url: '{{base_url}}/auth/login'
 sortOrder: 3
 description: ""
-folderId: "322050440118140940"
+folderId: "322065319604518924"
 parameters: []
 headers:
     - id: "2E4D008B-FDCD-42BF-9C24-F68E70FD539C"

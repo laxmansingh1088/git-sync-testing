@@ -1,14 +1,14 @@
 # yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
 # Restk Request
 
-id: "322050440118140950"
+id: "322065319604518934"
 version: 1
 name: DELETE_delete-delete-post
 method: DELETE
 url: https://jsonplaceholder.typicode.com/posts/1
 sortOrder: 3
 description: ""
-collectionId: "322050440109752320"
+collectionId: "322065319600324609"
 parameters: []
 headers: []
 bodyType: none

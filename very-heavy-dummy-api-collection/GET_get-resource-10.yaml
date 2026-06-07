@@ -1,14 +1,14 @@
 # yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
 # Restk Request
 
-id: "322050440122335235"
+id: "322065319604518939"
 version: 1
 name: GET_get-resource-10
 method: GET
 url: https://api.example.com/v1/resources/10
 sortOrder: 18
 description: ""
-collectionId: "322050440113946625"
+collectionId: "322065319600324612"
 parameters:
     - id: "914A790F-65A0-457D-B737-D790EE39EE27"
       key: debug

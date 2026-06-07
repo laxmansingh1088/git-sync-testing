@@ -1,14 +1,14 @@
 # yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
 # Restk Request
 
-id: "322050440134918166"
+id: "322065319612907545"
 version: 1
 name: PUT_put-request
 method: PUT
 url: '{{base_url}}/put'
 sortOrder: 5
 description: ""
-folderId: "322050440118140930"
+folderId: "322065319604518914"
 parameters: []
 headers: []
 bodyType: raw

@@ -1,14 +1,14 @@
 # yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
 # Restk Request
 
-id: "322050440147501078"
+id: "322065319621296155"
 version: 1
 name: GET_aws-signature-v4-real-s3
 method: GET
 url: https://putpost-deployment.s3.ap-south-1.amazonaws.com/
 sortOrder: 40
 description: ""
-folderId: "322050440118140944"
+folderId: "322065319604518928"
 parameters: []
 headers: []
 bodyType: none

@@ -1,14 +1,14 @@
 # yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
 # Restk Request
 
-id: "322050440143306756"
+id: "322065319617101842"
 version: 1
 name: GET_aws-signature-v4
 method: GET
 url: '{{base_url}}/aws/resource'
 sortOrder: 7
 description: ""
-folderId: "322050440118140938"
+folderId: "322065319604518922"
 parameters: []
 headers: []
 bodyType: none

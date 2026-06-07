@@ -1,14 +1,14 @@
 # yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
 # Restk Request
 
-id: "322050440151695364"
+id: "322065319625490437"
 version: 1
 name: GET_digest-auth-md5
 method: GET
 url: '{{base_url}}/digest-auth/auth/testuser/testpass'
 sortOrder: 36
 description: ""
-folderId: "322050440118140944"
+folderId: "322065319604518928"
 parameters: []
 headers: []
 bodyType: none
