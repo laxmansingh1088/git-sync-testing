@@ -1,14 +1,14 @@
 # yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
 # Restk Request
 
-id: "319413494518644751"
+id: "322050440151695379"
 version: 1
-name: NTLM Auth (requires local server)
+name: POST_ntlm-auth-requires-local-server
 method: POST
 url: http://localhost:8080/api/resource
 sortOrder: 47
 description: ""
-folderId: "319413494514450451"
+folderId: "322050440118140944"
 parameters: []
 headers: []
 bodyType: raw
@@ -17,7 +17,14 @@ bodyData:
     rawText: '{"data": "ntlm-test"}'
 authType: ntlm
 isAuthOverridden: true
-authConfigData: '{"ntlm":{"domain":"TESTDOMAIN","password":"{{REDACTED}}","username":"testuser"}}'
+authConfigData: |-
+    {
+      "ntlm": {
+        "domain": "TESTDOMAIN",
+        "password": "{{REDACTED}}",
+        "username": "testuser"
+      }
+    }
 prescript: ""
 postscript: ""
 skipParentScripts: false

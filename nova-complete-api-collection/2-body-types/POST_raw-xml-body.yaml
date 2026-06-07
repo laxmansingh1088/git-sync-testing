@@ -1,14 +1,14 @@
 # yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
 # Restk Request
 
-id: "319413717521399809"
+id: "322050440139112462"
 version: 1
-name: Raw XML Body
+name: POST_raw-xml-body
 method: POST
 url: '{{base_url}}/users/xml'
 sortOrder: 3
 description: ""
-folderId: "319413717517205509"
+folderId: "322050440118140937"
 parameters: []
 headers:
     - id: "B0836B98-C47E-44B7-9728-70B290E46A6F"

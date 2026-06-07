@@ -1,11 +1,11 @@
 # yaml-language-server: $schema=https://restk.ai/schema/v1/folder.schema.json
 # Restk Folder
 
-id: "319413494514450450"
+id: "322050440113946626"
 version: 1
-name: Auth Methods
+name: auth-methods
 sortOrder: 21
-parentCollectionId: "319413494510256128"
+parentCollectionId: "322050440101363712"
 authType: none
 isAuthOverridden: false
 authConfigData: ""

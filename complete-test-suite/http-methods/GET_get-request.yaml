@@ -1,14 +1,14 @@
 # yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
 # Restk Request
 
-id: "319413494514450432"
+id: "322050440134918161"
 version: 1
-name: GET Request
+name: GET_get-request
 method: GET
 url: '{{base_url}}/get'
 sortOrder: 3
 description: ""
-folderId: "319413494510256129"
+folderId: "322050440118140930"
 parameters: []
 headers:
     - id: "2C82356A-D179-409E-B5E9-3B0DEA93A131"

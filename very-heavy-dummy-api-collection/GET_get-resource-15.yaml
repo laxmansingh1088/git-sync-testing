@@ -1,14 +1,14 @@
 # yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
 # Restk Request
 
-id: "319413613431357460"
+id: "322050440126529538"
 version: 1
-name: GET - Resource 15
+name: GET_get-resource-15
 method: GET
 url: https://api.example.com/v1/resources/15
 sortOrder: 28
 description: ""
-collectionId: "319413613427163136"
+collectionId: "322050440113946625"
 parameters:
     - id: "9281FCBF-5385-4518-B28F-BF658681283F"
       key: debug
@@ -33,7 +33,10 @@ bodyContentType: ""
 bodyData: ""
 authType: bearer
 isAuthOverridden: true
-authConfigData: '{"bearerToken":"dummy_token_123"}'
+authConfigData: |-
+    {
+      "bearerToken": "dummy_token_123"
+    }
 prescript: ""
 postscript: ""
 skipParentScripts: false

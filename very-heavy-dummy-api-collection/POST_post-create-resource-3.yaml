@@ -1,14 +1,14 @@
 # yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
 # Restk Request
 
-id: "319413613427163142"
+id: "322050440130723856"
 version: 1
-name: POST - Create Resource 3
+name: POST_post-create-resource-3
 method: POST
 url: https://api.example.com/v1/resources
 sortOrder: 5
 description: ""
-collectionId: "319413613427163136"
+collectionId: "322050440113946625"
 parameters: []
 headers:
     - id: "FAD6AC4C-1975-4502-84C1-A20B8B35AEE9"
@@ -47,7 +47,10 @@ bodyData:
         }
 authType: bearer
 isAuthOverridden: true
-authConfigData: '{"bearerToken":"dummy_token_123"}'
+authConfigData: |-
+    {
+      "bearerToken": "dummy_token_123"
+    }
 prescript: ""
 postscript: ""
 skipParentScripts: false

@@ -1,14 +1,14 @@
 # yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
 # Restk Request
 
-id: "319413717513011209"
+id: "322050440139112455"
 version: 1
-name: POST - Create User
+name: POST_post-create-user
 method: POST
 url: '{{base_url}}/users'
 sortOrder: 2
 description: ""
-folderId: "319413717513011206"
+folderId: "322050440118140936"
 parameters: []
 headers:
     - id: "0B9C1CA9-B465-4920-8D9B-E5F195AA8FC2"

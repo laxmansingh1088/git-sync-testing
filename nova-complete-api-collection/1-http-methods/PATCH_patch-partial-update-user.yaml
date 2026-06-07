@@ -1,14 +1,14 @@
 # yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
 # Restk Request
 
-id: "319413717517205505"
+id: "322050440139112454"
 version: 1
-name: PATCH - Partial Update User
+name: PATCH_patch-partial-update-user
 method: PATCH
 url: '{{base_url}}/users/{{user_id}}'
 sortOrder: 4
 description: ""
-folderId: "319413717513011206"
+folderId: "322050440118140936"
 parameters: []
 headers:
     - id: "05ED405D-E01B-42C4-9AB6-DC948C6BC287"

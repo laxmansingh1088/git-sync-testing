@@ -1,14 +1,14 @@
 # yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
 # Restk Request
 
-id: "319413717521399831"
+id: "322050440143306769"
 version: 1
-name: Conditional Headers (ETag)
+name: GET_conditional-headers-etag
 method: GET
 url: '{{base_url}}/users/{{user_id}}'
 sortOrder: 1
 description: ""
-folderId: "319413717521399829"
+folderId: "322050440118140939"
 parameters: []
 headers:
     - id: "0D43D76D-B0D8-4014-AB8A-2E7822C76014"

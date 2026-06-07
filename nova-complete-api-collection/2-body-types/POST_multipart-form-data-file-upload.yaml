@@ -1,14 +1,14 @@
 # yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
 # Restk Request
 
-id: "319413717521399808"
+id: "322050440139112460"
 version: 1
-name: Multipart Form-Data (File Upload)
+name: POST_multipart-form-data-file-upload
 method: POST
 url: '{{base_url}}/users/upload'
 sortOrder: 2
 description: ""
-folderId: "319413717517205509"
+folderId: "322050440118140937"
 parameters: []
 headers: []
 bodyType: form_data

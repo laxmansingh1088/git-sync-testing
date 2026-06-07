@@ -1,14 +1,14 @@
 # yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
 # Restk Request
 
-id: "319413494518644738"
+id: "322050440151695376"
 version: 1
-name: OAuth 2.0 — Authorization Code
+name: GET_oauth-20-authorization-code
 method: GET
 url: https://demo.duendesoftware.com/api/test
 sortOrder: 34
 description: ""
-folderId: "319413494514450451"
+folderId: "322050440118140944"
 parameters: []
 headers: []
 bodyType: none
@@ -16,7 +16,18 @@ bodyContentType: ""
 bodyData: ""
 authType: oauth2
 isAuthOverridden: true
-authConfigData: '{"oauth2":{"accessToken":"{{REDACTED}}","authorizationURL":"","clientId":"interactive.confidential.nopkce","clientSecret":"{{REDACTED}}","grantType":"authorization_code","scope":"openid profile api","tokenURL":""}}'
+authConfigData: |-
+    {
+      "oauth2": {
+        "accessToken": "{{REDACTED}}",
+        "authorizationURL": "",
+        "clientId": "interactive.confidential.nopkce",
+        "clientSecret": "{{REDACTED}}",
+        "grantType": "authorization_code",
+        "scope": "openid profile api",
+        "tokenURL": ""
+      }
+    }
 prescript: ""
 postscript: ""
 skipParentScripts: false

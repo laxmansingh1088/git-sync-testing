@@ -1,14 +1,14 @@
 # yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
 # Restk Request
 
-id: "319413717521399826"
+id: "322050440143306762"
 version: 1
-name: JWT Auth (Script Generated)
+name: GET_jwt-auth-script-generated
 method: GET
 url: '{{base_url}}/jwt/resource'
 sortOrder: 11
 description: ""
-folderId: "319413717521399814"
+folderId: "322050440118140938"
 parameters: []
 headers: []
 bodyType: none
@@ -16,7 +16,12 @@ bodyContentType: ""
 bodyData: ""
 authType: jwt
 isAuthOverridden: true
-authConfigData: '{"jwtAlgorithm":"HS256","jwtPrefix":"Bearer","jwtSecret":"{{jwt_secret}}"}'
+authConfigData: |-
+    {
+      "jwtAlgorithm": "HS256",
+      "jwtPrefix": "Bearer",
+      "jwtSecret": "{{jwt_secret}}"
+    }
 prescript: |-
     const payload = {
         sub: nova.variables.get('user_id') || 'user_123',

@@ -1,14 +1,14 @@
 # yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
 # Restk Request
 
-id: "319413717517205510"
+id: "322050440139112459"
 version: 1
-name: JSON Body
+name: POST_json-body
 method: POST
 url: '{{base_url}}/posts'
 sortOrder: 17
 description: ""
-folderId: "319413717517205509"
+folderId: "322050440118140937"
 parameters: []
 headers:
     - id: "37D7F1A7-A055-4583-9439-A4C642E2F92B"

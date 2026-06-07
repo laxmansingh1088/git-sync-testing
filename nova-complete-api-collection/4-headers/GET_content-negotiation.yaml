@@ -1,14 +1,14 @@
 # yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
 # Restk Request
 
-id: "319413717521399832"
+id: "322050440143306770"
 version: 1
-name: Content Negotiation
+name: GET_content-negotiation
 method: GET
 url: '{{base_url}}/content'
 sortOrder: 2
 description: ""
-folderId: "319413717521399829"
+folderId: "322050440118140939"
 parameters: []
 headers:
     - id: "57852B45-E162-4FE2-9C87-E0A31BFF6190"

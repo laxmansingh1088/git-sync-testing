@@ -1,14 +1,14 @@
 # yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
 # Restk Request
 
-id: "319413717521399823"
+id: "322050440143306765"
 version: 1
-name: OAuth 1.0a
+name: GET_oauth-10a
 method: GET
 url: '{{base_url}}/oauth1/resource'
 sortOrder: 8
 description: ""
-folderId: "319413717521399814"
+folderId: "322050440118140938"
 parameters: []
 headers: []
 bodyType: none
@@ -16,7 +16,16 @@ bodyContentType: ""
 bodyData: ""
 authType: oauth1
 isAuthOverridden: true
-authConfigData: '{"oauth1":{"consumerKey":"{{oauth1_consumer_key}}","consumerSecret":"{{oauth1_consumer_secret}}","signatureMethod":"HMAC-SHA1","token":"{{oauth1_token}}","tokenSecret":"{{oauth1_token_secret}}"}}'
+authConfigData: |-
+    {
+      "oauth1": {
+        "consumerKey": "{{oauth1_consumer_key}}",
+        "consumerSecret": "{{oauth1_consumer_secret}}",
+        "signatureMethod": "HMAC-SHA1",
+        "token": "{{oauth1_token}}",
+        "tokenSecret": "{{oauth1_token_secret}}"
+      }
+    }
 prescript: |-
     nova.request.setOAuth1(
         nova.variables.get('oauth1_consumer_key'),

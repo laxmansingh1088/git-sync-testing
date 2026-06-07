@@ -1,14 +1,14 @@
 # yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
 # Restk Request
 
-id: "319413717521399820"
+id: "322050440143306767"
 version: 1
-name: OAuth2 - Refresh Token
+name: POST_oauth2-refresh-token
 method: POST
 url: '{{base_url}}/oauth/token'
 sortOrder: 5
 description: ""
-folderId: "319413717521399814"
+folderId: "322050440118140938"
 parameters: []
 headers:
     - id: "75CF1124-C9A6-470E-8E6A-BC71CBFEA2C8"

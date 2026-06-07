@@ -1,14 +1,14 @@
 # yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
 # Restk Request
 
-id: "319413494518644760"
+id: "322050440134918167"
 version: 1
-name: Environment Variable Substitution
+name: GET_environment-variable-substitution
 method: GET
 url: '{{base_url}}/get'
 sortOrder: 56
 description: ""
-folderId: "319413494518644759"
+folderId: "322050440118140934"
 parameters: []
 headers:
     - id: "969B0CC1-FEEF-49A3-8034-42EA215F9137"
@@ -22,7 +22,14 @@ bodyContentType: ""
 bodyData: ""
 authType: jwt
 isAuthOverridden: true
-authConfigData: '{"jwtAlgorithm":"HS256","jwtHeaderName":"Authorization","jwtPayload":"{\n  \"name\": \"Vinay KD\"\n}","jwtPrefix":"Bearer","jwtSecret":"{{REDACTED}}"}'
+authConfigData: |-
+    {
+      "jwtAlgorithm": "HS256",
+      "jwtHeaderName": "Authorization",
+      "jwtPayload": "{\n  \"name\": \"Vinay KD\"\n}",
+      "jwtPrefix": "Bearer",
+      "jwtSecret": "{{REDACTED}}"
+    }
 prescript: ""
 postscript: ""
 skipParentScripts: false

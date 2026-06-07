@@ -1,14 +1,14 @@
 # yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
 # Restk Request
 
-id: "319413717521399811"
+id: "322050440139112458"
 version: 1
-name: GraphQL Body
+name: POST_graphql-body
 method: POST
 url: '{{base_url}}/graphql'
 sortOrder: 5
 description: ""
-folderId: "319413717517205509"
+folderId: "322050440118140937"
 parameters: []
 headers:
     - id: "376B4500-344A-4A29-8CF8-3B438DE5ED85"

@@ -1,14 +1,21 @@
 # yaml-language-server: $schema=https://restk.ai/schema/v1/collection.schema.json
 # Restk Collection
 
-id: "319406106914848768"
+id: "322050440109752321"
 version: 1
-name: Nishant
+name: nishant
 sortOrder: 0
 isHidden: false
 isSharedWithAI: true
 authType: hawk
-authConfigData: '{"hawk":{"ext":"ghp_uoR12SMGzvDG2KgT5I9Mugr2C0CQsu3yI9uN","hawkKey":"ghp_uoR12SMGzvDG2KgT5I9Mugr2C0CQsu3yI9uN","hawkId":"ghp_uoR12SMGzvDG2KgT5I9Mugr2C0CQsu3yI9uN"}}'
+authConfigData: |-
+    {
+      "hawk": {
+        "ext": "ghp_uoR12SMGzvDG2KgT5I9Mugr2C0CQsu3yI9uN",
+        "hawkId": "ghp_uoR12SMGzvDG2KgT5I9Mugr2C0CQsu3yI9uN",
+        "hawkKey": "ghp_uoR12SMGzvDG2KgT5I9Mugr2C0CQsu3yI9uN"
+      }
+    }
 prescript: ghp_uoR12SMGzvDG2KgT5I9Mugr2C0CQsu3yI9uN
 postscript: ghp_uoR12SMGzvDG2KgT5I9Mugr2C0CQsu3yI9uN
 variables:

@@ -1,14 +1,14 @@
 # yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
 # Restk Request
 
-id: "319413717521399821"
+id: "322050440143306759"
 version: 1
-name: Digest Auth
+name: GET_digest-auth
 method: GET
 url: '{{base_url}}/secure/resource'
 sortOrder: 6
 description: ""
-folderId: "319413717521399814"
+folderId: "322050440118140938"
 parameters: []
 headers: []
 bodyType: none
@@ -16,7 +16,14 @@ bodyContentType: ""
 bodyData: ""
 authType: digest
 isAuthOverridden: true
-authConfigData: '{"digest":{"algorithm":"MD5","password":"{{password}}","username":"{{username}}"}}'
+authConfigData: |-
+    {
+      "digest": {
+        "algorithm": "MD5",
+        "password": "{{password}}",
+        "username": "{{username}}"
+      }
+    }
 prescript: nova.request.setDigestAuth(nova.variables.get('username'), nova.variables.get('password'));
 postscript: ""
 skipParentScripts: false

@@ -1,14 +1,14 @@
 # yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
 # Restk Request
 
-id: "319413494518644748"
+id: "322050440151695368"
 version: 1
-name: Hawk Auth
+name: GET_hawk-auth
 method: GET
 url: '{{echo_url}}/auth/hawk'
 sortOrder: 44
 description: ""
-folderId: "319413494514450451"
+folderId: "322050440118140944"
 parameters: []
 headers: []
 bodyType: none
@@ -16,7 +16,14 @@ bodyContentType: ""
 bodyData: ""
 authType: hawk
 isAuthOverridden: true
-authConfigData: '{"hawk":{"algorithm":"sha256","hawkId":"{{hawk_id}}","hawkKey":"{{REDACTED}}"}}'
+authConfigData: |-
+    {
+      "hawk": {
+        "algorithm": "sha256",
+        "hawkId": "{{hawk_id}}",
+        "hawkKey": "{{REDACTED}}"
+      }
+    }
 prescript: ""
 postscript: ""
 skipParentScripts: false
