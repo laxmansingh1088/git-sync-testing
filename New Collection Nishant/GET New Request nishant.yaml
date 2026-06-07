@@ -7,11 +7,11 @@ name: GET New Request nishant
 method: DELETE
 url: nishhh
 sortOrder: 1.82816
-description: nishhhnishhh
+description: LaxmanP1
 intentAnnotation:
-    whenToUse: nishhhnishhh
+    whenToUse: LaxmanP1
     preconditions:
-        - nishhhnishhh
+        - LaxmanP1
     commonNextSteps:
         - nishhhnishhh
     doNotUseFor: nishhhnishhh
@@ -27,6 +27,16 @@ parameters:
       value: ""
       isEnabled: false
       order: 1
+    - id: "C62219AB-194B-4D4D-ABC3-74CA76C9EE9E"
+      key: LaxmanP1
+      value: LaxmanP1
+      isEnabled: true
+      order: 2
+    - id: "B6161D80-8EA8-405D-B23F-346CF376E427"
+      key: LaxmanP2
+      value: LaxmanP2
+      isEnabled: true
+      order: 3
 headers:
     - id: "CDE877B6-F52D-4082-BAD1-297A84DA221F"
       key: nishhh
@@ -34,22 +44,46 @@ headers:
       isEnabled: true
       isSecret: false
       order: 0
+    - id: "243BF4E0-2E00-43FD-A61C-FBAB766EF2E6"
+      key: LaxmanH1
+      value: LaxmanH1
+      isEnabled: true
+      isSecret: false
+      order: 1
+    - id: "C707080B-4E2A-4BA1-B545-380EC06384A7"
+      key: LaxmanH2
+      value: LaxmanH2
+      isEnabled: true
+      isSecret: false
+      order: 2
 bodyType: raw
-bodyContentType: html
+bodyContentType: text
 bodyData:
-    rawHTML: nishhh
-authType: bearer
+    rawText: Laxman text
+authType: basic
 isAuthOverridden: true
 authConfigData: |-
     {
+      "basicPassword": "LaxmanAuth1",
+      "basicUsername": "LaxmanAuth1",
       "bearerToken": "nishhh{{nishhhnishhh}}"
     }
-prescript: nishhhnishhh
-postscript: nishhhnishhh
+prescript: Laxman - pre
+postscript: LaxmanP1 - POST
 skipParentScripts: false
 variables:
     - id: "EE6C15CB-C590-4476-837E-A96F50774C4D"
       key: nishhh
       value: nishhh
       order: 0
+      enabled: true
+    - id: "A395C57B-584D-466F-BAB0-1EAC32A6538D"
+      key: LaxmanV1
+      value: LaxmanV1
+      order: 1
+      enabled: true
+    - id: "A7D51D71-028F-4B76-B9A4-8C78071A6908"
+      key: LaxmanP2
+      value: LaxmanP2
+      order: 2
       enabled: true
