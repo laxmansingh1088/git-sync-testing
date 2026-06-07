@@ -4,7 +4,7 @@
 id: "322066416251437056"
 version: 1
 name: GET New Request nishant added
-method: DELETE
+method: HEAD
 url: nishhh
 sortOrder: 1.82816
 description: LaxmanP1
@@ -57,9 +57,9 @@ headers:
       isSecret: false
       order: 2
 bodyType: raw
-bodyContentType: text
+bodyContentType: html
 bodyData:
-    rawText: Laxman
+    rawHTML: nishhh
 authType: wssUsernameToken
 isAuthOverridden: true
 authConfigData: |-
