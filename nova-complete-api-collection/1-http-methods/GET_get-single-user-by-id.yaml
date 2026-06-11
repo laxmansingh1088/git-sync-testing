@@ -5,7 +5,7 @@ id: "322065319617101826"
 version: 1
 name: GET_get-single-user-by-id
 method: GET
-url: '{{base_url}}/userss/{{user_id}}'
+url: '{{base_url}}/userrrrs/{{user_id}}'
 sortOrder: 1
 description: ""
 folderId: "322065319604518920"
