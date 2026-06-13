@@ -3,7 +3,7 @@
   "workspaceId": 322065319034093568,
   "workspaceName": "Git Testing 7th june night",
   "encryption": {
-    "keyId": "k1",
+    "keyId": "k2",
     "alg": "AES-256-GCM",
     "formatVersion": 1
   }

@@ -49,7 +49,7 @@ authType: bearer
 isAuthOverridden: true
 authConfigData: |-
     {
-      "bearerToken": "ENC:v2:k1:SmyQTl9fkGYP07d2:5wNdyKgUQ2b5EvaX3bhB:FQgqB1okaFwy5ljsgnT5fQ=="
+      "bearerToken": "ENC:v2:k2:zkhXo883mkiYWh4Q:KO4c9VaOXcnliorwYMyo:z3zhRBdfpxTHwhmen+4QUw=="
     }
 prescript: ""
 postscript: ""
