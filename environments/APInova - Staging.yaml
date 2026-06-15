@@ -1,0 +1,58 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/environment.schema.json
+# Restk Environment
+
+id: "324952536312184832"
+version: 1
+name: APInova - Staging
+variables:
+    - id: "324952536312184833"
+      key: base_url
+      value: https://staging.apinova.app
+      type: default
+      enabled: true
+      order: 0
+    - id: "324952536312184834"
+      key: access_token
+      type: secret
+      enabled: true
+      order: 1
+    - id: "324952536312184835"
+      key: refresh_token
+      type: secret
+      enabled: true
+      order: 2
+    - id: "324952536312184836"
+      key: user_id
+      type: default
+      enabled: true
+      order: 3
+    - id: "324952536312184837"
+      key: user_email
+      type: default
+      enabled: true
+      order: 4
+    - id: "324952536312184838"
+      key: device_id
+      type: default
+      enabled: true
+      order: 5
+    - id: "324952536312184839"
+      key: device_unique_id
+      type: default
+      enabled: true
+      order: 6
+    - id: "324952536312184840"
+      key: device_node_id
+      type: default
+      enabled: true
+      order: 7
+    - id: "324952536312184841"
+      key: mobile_device_id
+      type: default
+      enabled: true
+      order: 8
+    - id: "324952536312184842"
+      key: session_id_to_revoke
+      type: default
+      enabled: true
+      order: 9
