@@ -7,7 +7,7 @@ name: nishnt-ghpuor12smgzvdg2kgt5i9mugr2c0cqsu3yi9un
 variables:
     - id: "322065319625490457"
       key: ghp_uoR12SMGzvDG2KgT5I9Mugr2C0CQsu3yI9uN
-      value: ENC:v2:k2:7yW8AeiPvJP7hPm2:r6qaF4EaiMSz9+O3TZ8s/uZxWQWMZc3IqcsUI7jHtNQEgU0E+5r6UQ==:qzP/h1rx5U8DQbsnCdLXlw==
+      value: ghp_uoR12SMGzvDG2KgT5I9Mugr2C0CQsu3yI9uN
       type: default
       enabled: true
       order: 0

@@ -35,7 +35,7 @@ authType: bearer
 isAuthOverridden: true
 authConfigData: |-
     {
-      "bearerToken": "ENC:v2:k2:UuD56y91Uh4sa29H:4qOs2+mc0RtfIFKOMjYq:wMgzczMRqSDI4hqw4F8cEw=="
+      "bearerToken": "dummy_token_123"
     }
 prescript: ""
 postscript: ""
