@@ -5,7 +5,7 @@ id: "322065319604518936"
 version: 1
 name: POST_post-create-post
 method: POST
-url: https://jsonplaceholder.typicode.com/posts
+url: https://jsonplaceholder.typicode.com/postss
 sortOrder: 1
 description: ""
 collectionId: "322065319600324609"

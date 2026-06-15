@@ -5,7 +5,7 @@ id: "322065319604518935"
 version: 1
 name: GET_get-sample-user
 method: GET
-url: https://jsonplaceholder.typicode.com/users/1
+url: https://jsonplaceholder.typicode.com/usersert/1
 sortOrder: 2
 description: ""
 collectionId: "322065319600324609"
