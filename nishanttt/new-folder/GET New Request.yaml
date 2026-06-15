@@ -4,7 +4,7 @@
 id: "324911237416615936"
 version: 1
 name: GET New Request
-method: GET
+method: DELETE
 url: ""
 sortOrder: 3.65632
 description: ""
