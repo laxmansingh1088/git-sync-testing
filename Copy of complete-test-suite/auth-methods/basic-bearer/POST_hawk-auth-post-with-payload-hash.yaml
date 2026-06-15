@@ -1,0 +1,31 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
+# Restk Request
+
+id: "322062069690007552"
+version: 1
+name: POST_hawk-auth-post-with-payload-hash
+method: POST
+url: '{{base_url}}/post'
+sortOrder: 46
+description: ""
+folderId: "322062069585149952"
+parameters: []
+headers: []
+bodyType: raw
+bodyContentType: text
+bodyData:
+    rawText: '{"test": "hawk-payload"}'
+authType: hawk
+isAuthOverridden: true
+authConfigData: |-
+    {
+      "hawk": {
+        "algorithm": "sha256",
+        "hawkId": "dh37fgj492je",
+        "hawkKey": "{{REDACTED}}"
+      }
+    }
+prescript: ""
+postscript: ""
+skipParentScripts: false
+variables: []

@@ -11,4 +11,9 @@ authType: none
 authConfigData: ""
 prescript: ""
 postscript: ""
-variables: []
+variables:
+    - id: "B2E39893-9317-4FD9-B1FF-200D8140EF96"
+      key: 'Authorization:'
+      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.test.signature
+      order: 0
+      enabled: true

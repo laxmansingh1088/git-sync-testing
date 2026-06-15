@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
+# Restk Request
+
+id: "322062069652258817"
+version: 1
+name: GET_digest-auth-sha-256
+method: GET
+url: '{{base_url}}/digest-auth/auth/testuser/testpass/SHA-256'
+sortOrder: 37
+description: ""
+folderId: "322062069585149952"
+parameters: []
+headers: []
+bodyType: none
+bodyContentType: ""
+bodyData: ""
+authType: digest
+isAuthOverridden: true
+authConfigData: |-
+    {
+      "digest": {
+        "algorithm": "SHA-256",
+        "password": "{{REDACTED}}",
+        "username": "testuser"
+      }
+    }
+prescript: ""
+postscript: ""
+skipParentScripts: false
+variables: []

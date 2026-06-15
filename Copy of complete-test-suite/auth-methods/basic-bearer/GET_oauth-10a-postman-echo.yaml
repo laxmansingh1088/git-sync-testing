@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
+# Restk Request
+
+id: "322062069673230336"
+version: 1
+name: GET_oauth-10a-postman-echo
+method: GET
+url: '{{echo_url}}/oauth1'
+sortOrder: 42
+description: ""
+folderId: "322062069585149952"
+parameters: []
+headers: []
+bodyType: none
+bodyContentType: ""
+bodyData: ""
+authType: oauth1
+isAuthOverridden: true
+authConfigData: |-
+    {
+      "oauth1": {
+        "consumerKey": "{{oauth1_consumer_key}}",
+        "consumerSecret": "{{REDACTED}}",
+        "signatureMethod": "HMAC-SHA1",
+        "token": "",
+        "tokenSecret": ""
+      }
+    }
+prescript: ""
+postscript: ""
+skipParentScripts: false
+variables: []

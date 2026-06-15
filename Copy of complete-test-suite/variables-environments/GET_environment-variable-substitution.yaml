@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
+# Restk Request
+
+id: "322062069727756288"
+version: 1
+name: GET_environment-variable-substitution
+method: GET
+url: '{{base_url}}/get'
+sortOrder: 56
+description: ""
+folderId: "322062069723561984"
+parameters: []
+headers:
+    - id: "EFD8A5CA-6901-41AD-9ED4-BC486D32F176"
+      key: X-Token
+      value: '{{bearer_token}}'
+      isEnabled: true
+      isSecret: false
+      order: 0
+bodyType: none
+bodyContentType: ""
+bodyData: ""
+authType: jwt
+isAuthOverridden: true
+authConfigData: |-
+    {
+      "jwtAlgorithm": "HS256",
+      "jwtHeaderName": "Authorization",
+      "jwtPayload": "{\n  \"name\": \"Vinay KD\"\n}",
+      "jwtPrefix": "Bearer",
+      "jwtSecret": "{{REDACTED}}"
+    }
+prescript: ""
+postscript: ""
+skipParentScripts: false
+variables: []
