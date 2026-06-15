@@ -4,7 +4,7 @@
 id: "324919218283741184"
 version: 1
 name: GET New Request
-method: GET
+method: PUT
 url: ""
 sortOrder: 1.82816
 description: ""
