@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
+# Restk Request
+
+id: "324915581805395968"
+version: 1
+name: GET New Request
+method: GET
+url: ""
+sortOrder: 1.82816
+description: ""
+folderId: "324915433931014144"
+parameters: []
+headers: []
+bodyType: none
+bodyContentType: ""
+bodyData: ""
+authType: inherit
+isAuthOverridden: false
+authConfigData: ""
+prescript: ""
+postscript: ""
+skipParentScripts: false
+variables: []
