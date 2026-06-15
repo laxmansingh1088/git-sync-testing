@@ -1,10 +1,5 @@
 {
   "createdAt": "2026-06-07T17:32:36Z",
   "workspaceId": 322065319034093568,
-  "workspaceName": "Git Testing 7th june night",
-  "encryption": {
-    "keyId": "k2",
-    "alg": "AES-256-GCM",
-    "formatVersion": 1
-  }
+  "workspaceName": "Git Testing 7th june night"
 }

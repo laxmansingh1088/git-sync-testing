@@ -9,7 +9,12 @@ url: https://jsonplaceholder.typicode.com/postsertt/1
 sortOrder: 2
 description: ""
 collectionId: "322065319600324609"
-parameters: []
+parameters:
+    - id: "FB1D9EA2-C2BA-47DC-ABF3-FE6EBC5EDC46"
+      key: "234"
+      value: ""
+      isEnabled: true
+      order: 0
 headers:
     - id: "192564E0-095F-4462-A962-A2BC41ABCBD2"
       key: Content-Type

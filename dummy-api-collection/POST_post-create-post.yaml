@@ -5,11 +5,16 @@ id: "322065319604518936"
 version: 1
 name: POST_post-create-post
 method: POST
-url: https://jsonplaceholder.typicode.com/postss
+url: https://jsonplaceholder.typicode.com/postss1
 sortOrder: 1
 description: ""
 collectionId: "322065319600324609"
-parameters: []
+parameters:
+    - id: "82074D00-52B7-463B-9B7A-555A74E47B4F"
+      key: "12"
+      value: "12"
+      isEnabled: true
+      order: 0
 headers:
     - id: "50321815-8B22-473F-937B-AC83F7F6B694"
       key: Content-Type
@@ -17,6 +22,12 @@ headers:
       isEnabled: true
       isSecret: false
       order: 0
+    - id: "2B0D4993-D230-44FF-AFDB-A5240A6C41FA"
+      key: 3de3
+      value: asdfasd
+      isEnabled: true
+      isSecret: false
+      order: 1
 bodyType: raw
 bodyContentType: json
 bodyData:
