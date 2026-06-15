@@ -4,4 +4,90 @@
 id: "322065319625490455"
 version: 1
 name: nishhh
-variables: []
+variables:
+    - id: "324912848708829184"
+      key: GITHUB_TOKEN
+      type: secret
+      enabled: true
+      order: 0
+    - id: "324912949758001152"
+      key: ghp_uoR12SMGzvDG2KgT5I9Mugr2C0CQsu3yI9uN
+      value: jjj
+      type: default
+      enabled: true
+      order: 1
+    - id: "324913083313029120"
+      key: GITHUB_TOKEN_2
+      type: secret
+      enabled: true
+      order: 2
+    - id: "324913134403846144"
+      key: GITHUB_TOKEN_3
+      type: secret
+      enabled: true
+      order: 3
+    - id: "324913151336251392"
+      key: GITHUB_TOKEN_4
+      type: secret
+      enabled: true
+      order: 4
+    - id: "324913194730520576"
+      key: GITHUB_TOKEN_5
+      type: secret
+      enabled: true
+      order: 5
+    - id: "324913240381325312"
+      key: GITHUB_TOKEN_6
+      type: secret
+      enabled: true
+      order: 6
+    - id: "324913262762131456"
+      key: GITHUB_TOKEN_7
+      type: secret
+      enabled: true
+      order: 7
+    - id: "324913841353785344"
+      key: GITHUB_TOKEN_8
+      type: secret
+      enabled: true
+      order: 8
+    - id: "324914043322105856"
+      key: GITHUB_TOKEN_9
+      type: secret
+      enabled: true
+      order: 9
+    - id: "324914052818010112"
+      key: GITHUB_TOKEN_10
+      type: secret
+      enabled: true
+      order: 10
+    - id: "324914056873902080"
+      key: GITHUB_TOKEN_11
+      type: secret
+      enabled: true
+      order: 11
+    - id: "324914059533090816"
+      key: GITHUB_TOKEN_12
+      type: secret
+      enabled: true
+      order: 12
+    - id: "324914064809525248"
+      key: GITHUB_TOKEN_13
+      type: secret
+      enabled: true
+      order: 13
+    - id: "324914067154141184"
+      key: GITHUB_TOKEN_14
+      type: secret
+      enabled: true
+      order: 14
+    - id: "324914076805234688"
+      key: GITHUB_TOKEN_15
+      type: secret
+      enabled: true
+      order: 15
+    - id: "324914117062164480"
+      key: GITHUB_TOKEN_16
+      type: secret
+      enabled: true
+      order: 16
