@@ -28,7 +28,7 @@ authConfigData: |-
       "apiKeyLocation": "header",
       "apiKeyName": "nishhh",
       "apiKeyValue": "nishhh",
-      "basicPassword": "",
+      "basicPassword": "nishhh",
       "basicUsername": "nishh",
       "jwtAlgorithm": "HS256",
       "jwtPayload": "",
