@@ -18,12 +18,12 @@ intentAnnotation:
 folderId: "322065319604518919"
 parameters:
     - id: "8C2F62AA-F4A5-4F5D-B05D-63434CD591E6"
-      key: ghp_uoR12SMGzvDG2KgT5I9Mugr2C0CQsu3yI9uN
+      key: ""
       value: ghp_uoR12SMGzvDG2KgT5I9Mugr2C0CQsu3yI9uN
       isEnabled: true
       order: 0
     - id: "DC70B544-2D3E-487C-A87A-B62FEA6F8F3E"
-      key: ghp_uoR12SMGzvDG2KgT5I9Mugr2C0CQsu3yI9uN
+      key: ""
       value: ""
       isEnabled: false
       order: 1
