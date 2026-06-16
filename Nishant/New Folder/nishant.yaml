@@ -22,7 +22,10 @@ authConfigData: |-
     {
       "apiKeyLocation": "header",
       "apiKeyName": "nishhh",
-      "apiKeyValue": "nishhh"
+      "apiKeyValue": "nishhh",
+      "jwtAlgorithm": "HS256",
+      "jwtPayload": "",
+      "jwtSecret": "sdfaf"
     }
 prescript: ""
 postscript: ""
