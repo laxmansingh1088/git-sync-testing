@@ -4,7 +4,7 @@
 id: "322065319604518937"
 version: 1
 name: PUT_put-update-post
-method: PUT
+method: HEAD
 url: https://jsonplaceholder.typicode.com/postsertt/1
 sortOrder: 2
 description: ""
