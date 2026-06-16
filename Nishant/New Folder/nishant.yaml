@@ -4,23 +4,31 @@
 id: "325313531631108096"
 version: 1
 name: nishant
-method: POST
+method: OPTIONS
 url: httpsnishnttttttt
 sortOrder: 1.82816
-description: ""
+description: nishhh
+intentAnnotation:
+    whenToUse: nishh
+    preconditions:
+        - nishhh
+    commonNextSteps:
+        - nishh
+    doNotUseFor: nishh
 folderId: "325313522462359552"
 parameters: []
 headers: []
 bodyType: none
 bodyContentType: ""
 bodyData: ""
-authType: apiKey
+authType: bearer
 isAuthOverridden: true
 authConfigData: |-
     {
       "apiKeyLocation": "header",
       "apiKeyName": "nishhh",
-      "apiKeyValue": "nishhh"
+      "apiKeyValue": "nishhh",
+      "bearerToken": "{{nishh}}"
     }
 prescript: ""
 postscript: ""
