@@ -5,6 +5,7 @@ id: "325313531631108096"
 version: 1
 name: nishant
 method: OPTIONS
+method: HEAD
 url: httpsnishnttttttt
 sortOrder: 1.82816
 description: nishhh
@@ -22,6 +23,7 @@ bodyType: none
 bodyContentType: ""
 bodyData: ""
 authType: basic
+authType: apiKey
 isAuthOverridden: true
 authConfigData: |-
     {
