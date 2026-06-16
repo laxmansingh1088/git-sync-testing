@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://restk.ai/schema/v1/environment.schema.json
 # Restk Environment
 
-id: "322065319625490456"
+id: "325327596616695809"
 version: 1
 name: mm renamed
 variables:
@@ -12,6 +12,7 @@ variables:
       order: 0
     - id: "322065319625490458"
       key: baseeurl
-      type: secret
+      value: "1111"
+      type: default
       enabled: true
       order: 1
