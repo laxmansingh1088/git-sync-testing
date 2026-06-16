@@ -1,0 +1,40 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
+# Restk Request
+
+id: "0"
+version: 1
+name: Google
+method: GET
+url: https://www.google.com
+sortOrder: 0.9640882816
+description: "111111"
+folderId: "325313522462359552"
+parameters:
+    - id: "DBC27B7C-2A9A-495F-B531-E784C16D8337"
+      key: "111"
+      value: "1111"
+      isEnabled: true
+      order: 0
+headers:
+    - id: "95DC487A-EEDC-4FA1-9CB0-F20E3D5D28BE"
+      key: "2222"
+      value: "2222"
+      isEnabled: true
+      isSecret: false
+      order: 0
+bodyType: raw
+bodyContentType: text
+bodyData:
+    rawText: Helloooo
+authType: inherit
+isAuthOverridden: false
+authConfigData: ""
+prescript: lax
+postscript: lax
+skipParentScripts: false
+variables:
+    - id: "F2623EDD-142F-4A2D-85CD-F66561341F73"
+      key: "2222"
+      value: "2222"
+      order: 0
+      enabled: true
