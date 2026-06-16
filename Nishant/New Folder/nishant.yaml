@@ -4,7 +4,7 @@
 id: "325313531631108096"
 version: 1
 name: nishant
-method: PATCH
+method: HEAD
 url: httpsnishnttttttt
 sortOrder: 1.82816
 description: nishhh
@@ -21,7 +21,7 @@ headers: []
 bodyType: none
 bodyContentType: ""
 bodyData: ""
-authType: jwt
+authType: apiKey
 isAuthOverridden: true
 authConfigData: |-
     {
