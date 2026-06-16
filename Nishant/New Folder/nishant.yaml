@@ -4,7 +4,7 @@
 id: "325313531631108096"
 version: 1
 name: nishant
-method: PATCH
+method: OPTIONS
 url: httpsnishnttttttt
 sortOrder: 1.82816
 description: nishhh
@@ -21,13 +21,15 @@ headers: []
 bodyType: none
 bodyContentType: ""
 bodyData: ""
-authType: jwt
+authType: basic
 isAuthOverridden: true
 authConfigData: |-
     {
       "apiKeyLocation": "header",
       "apiKeyName": "nishhh",
       "apiKeyValue": "nishhh",
+      "basicPassword": "",
+      "basicUsername": "nishh",
       "jwtAlgorithm": "HS256",
       "jwtPayload": "",
       "jwtSecret": "sdfaf"
