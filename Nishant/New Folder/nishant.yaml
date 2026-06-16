@@ -4,17 +4,19 @@
 id: "325313531631108096"
 version: 1
 name: nishant
-method: POST
+method: PATCH
 url: httpsnishnttttttt
 sortOrder: 1.82816
-description: ""
+description: "1212"
+intentAnnotation:
+    whenToUse: "1212"
 folderId: "325313522462359552"
 parameters: []
 headers: []
 bodyType: none
 bodyContentType: ""
 bodyData: ""
-authType: apiKey
+authType: jwt
 isAuthOverridden: true
 authConfigData: |-
     {
