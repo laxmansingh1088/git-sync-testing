@@ -4,7 +4,7 @@
 id: "325313531631108096"
 version: 1
 name: nishant
-method: GET
+method: OPTIONS
 url: httpsnishntt
 sortOrder: 1.82816
 description: ""
