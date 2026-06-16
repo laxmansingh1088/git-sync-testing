@@ -4,6 +4,12 @@
 id: "325313531631108096"
 version: 1
 name: nishant
+method: PATCH
+url: httpsnishnttttttt
+sortOrder: 1.82816
+description: "1212"
+intentAnnotation:
+    whenToUse: "1212"
 method: OPTIONS
 url: httpsnishnttttttt
 sortOrder: 1.82816
@@ -22,13 +28,16 @@ bodyType: none
 bodyContentType: ""
 bodyData: ""
 authType: bearer
+authType: jwt
 isAuthOverridden: true
 authConfigData: |-
     {
       "apiKeyLocation": "header",
       "apiKeyName": "nishhh",
       "apiKeyValue": "nishhh",
-      "bearerToken": "{{nishh}}"
+      "jwtAlgorithm": "HS256",
+      "jwtPayload": "",
+      "jwtSecret": "sdfaf"
     }
 prescript: ""
 postscript: ""
