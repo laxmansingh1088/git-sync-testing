@@ -1,0 +1,31 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
+# Restk Request
+
+id: "325310386372870159"
+version: 1
+name: 2. List Devices
+method: GET
+url: '{{base_url}}/api/v0/devices'
+sortOrder: 1
+description: ""
+folderId: "325310386372870157"
+parameters:
+    - id: "F148FFFA-7E81-4ECA-BC59-DF0D4B8DC0E0"
+      key: include_inactive
+      value: "false"
+      isEnabled: true
+      order: 0
+headers: []
+bodyType: none
+bodyContentType: ""
+bodyData: ""
+authType: bearer
+isAuthOverridden: true
+authConfigData: |-
+    {
+      "bearerToken": "{{REDACTED}}"
+    }
+prescript: ""
+postscript: ""
+skipParentScripts: false
+variables: []

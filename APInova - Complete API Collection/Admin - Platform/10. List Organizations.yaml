@@ -1,0 +1,46 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
+# Restk Request
+
+id: "325310386385453097"
+version: 1
+name: 10. List Organizations
+method: GET
+url: '{{base_url}}/api/v0/admin/organizations'
+sortOrder: 9
+description: ""
+folderId: "325310386385453086"
+parameters:
+    - id: "E3D9F49A-C2DE-4E4A-BCE5-2C2E4EB8B7F9"
+      key: page
+      value: "1"
+      isEnabled: true
+      order: 0
+    - id: "ACD4F9A0-64C8-4EBD-A78C-38DCC9ACDCF9"
+      key: limit
+      value: "20"
+      isEnabled: true
+      order: 1
+    - id: "2046B72D-4848-4A83-B986-1487B0A57FC6"
+      key: search
+      value: ""
+      isEnabled: false
+      order: 2
+    - id: "45A8B38B-C2DF-4BF5-898F-18806A2CA0CD"
+      key: plan
+      value: ""
+      isEnabled: false
+      order: 3
+headers: []
+bodyType: none
+bodyContentType: ""
+bodyData: ""
+authType: bearer
+isAuthOverridden: true
+authConfigData: |-
+    {
+      "bearerToken": "{{REDACTED}}"
+    }
+prescript: ""
+postscript: ""
+skipParentScripts: false
+variables: []

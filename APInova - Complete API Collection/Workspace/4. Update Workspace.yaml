@@ -1,0 +1,39 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
+# Restk Request
+
+id: "325310386377064478"
+version: 1
+name: 4. Update Workspace
+method: PUT
+url: '{{base_url}}/api/v0/workspaces/{{workspace_id}}'
+sortOrder: 4
+description: ""
+folderId: "325310386377064472"
+parameters: []
+headers:
+    - id: "E5AED7B1-9867-4401-8ADB-1C0C56B94D16"
+      key: Content-Type
+      value: application/json
+      isEnabled: true
+      isSecret: false
+      order: 0
+bodyType: raw
+bodyContentType: json
+bodyData:
+    rawJSON: |-
+        {
+                        "conflict_resolution_mode": "last_write_wins",
+                        "description": "Updated description",
+                        "name": "Updated Workspace Name",
+                        "theme_color": "#3498db"
+                      }
+authType: bearer
+isAuthOverridden: true
+authConfigData: |-
+    {
+      "bearerToken": "{{REDACTED}}"
+    }
+prescript: ""
+postscript: ""
+skipParentScripts: false
+variables: []

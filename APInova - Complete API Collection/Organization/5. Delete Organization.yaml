@@ -1,0 +1,37 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
+# Restk Request
+
+id: "325310386377064448"
+version: 1
+name: 5. Delete Organization
+method: POST
+url: '{{base_url}}/api/v0/org/{{org_id}}/delete'
+sortOrder: 4
+description: ""
+folderId: "325310386372870161"
+parameters: []
+headers:
+    - id: "B36BFBFE-04C2-42CD-B3C0-4097ACCD8A64"
+      key: Content-Type
+      value: application/json
+      isEnabled: true
+      isSecret: false
+      order: 0
+bodyType: raw
+bodyContentType: json
+bodyData:
+    rawJSON: |-
+        {
+                        "confirm_name": "My Organization",
+                        "password": "YourPassword123!"
+                      }
+authType: bearer
+isAuthOverridden: true
+authConfigData: |-
+    {
+      "bearerToken": "{{REDACTED}}"
+    }
+prescript: ""
+postscript: ""
+skipParentScripts: false
+variables: []

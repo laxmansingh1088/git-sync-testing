@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
+# Restk Request
+
+id: "325310386385453058"
+version: 1
+name: 5. Reactivate Subscription
+method: POST
+url: '{{base_url}}/api/v0/billing/reactivate'
+sortOrder: 4
+description: ""
+folderId: "325310386381258783"
+parameters: []
+headers:
+    - id: "B53F3C55-DF55-47FE-8071-9D745BE5EBCB"
+      key: Content-Type
+      value: application/json
+      isEnabled: true
+      isSecret: false
+      order: 0
+bodyType: raw
+bodyContentType: json
+bodyData:
+    rawJSON: |-
+        {
+                        "org_id": "{{org_id}}"
+                      }
+authType: bearer
+isAuthOverridden: true
+authConfigData: |-
+    {
+      "bearerToken": "{{REDACTED}}"
+    }
+prescript: ""
+postscript: ""
+skipParentScripts: false
+variables: []

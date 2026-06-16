@@ -1,0 +1,39 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
+# Restk Request
+
+id: "325310386385453087"
+version: 1
+name: 1. Admin Login
+method: POST
+url: '{{base_url}}/api/v0/admin/auth/login'
+sortOrder: 142
+description: ""
+folderId: "325310386385453086"
+parameters: []
+headers:
+    - id: "7303707E-90AA-4659-A63E-91F9B4231F1B"
+      key: Content-Type
+      value: application/json
+      isEnabled: true
+      isSecret: false
+      order: 0
+bodyType: raw
+bodyContentType: json
+bodyData:
+    rawJSON: |-
+        {
+                        "email": "admin@example.com",
+                        "password": "AdminPassword123!"
+                      }
+authType: none
+isAuthOverridden: true
+authConfigData: ""
+prescript: ""
+postscript: |-
+    if (nova.response.status === 200) {
+        const response = nova.response.json();
+        nova.collectionVariables.set('access_token', response.data.access_token);
+    }
+    nova.test('Admin login successful', () => nova.expect(nova.response.status).toBe(200));
+skipParentScripts: false
+variables: []

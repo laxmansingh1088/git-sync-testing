@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
+# Restk Request
+
+id: "325310386385453082"
+version: 1
+name: 4. Disable User Logging
+method: POST
+url: '{{base_url}}/api/v0/admin/logs/users/disable'
+sortOrder: 3
+description: ""
+folderId: "325310386385453079"
+parameters: []
+headers:
+    - id: "F8931D6F-EAA8-4B61-A056-71B9D12B6098"
+      key: Content-Type
+      value: application/json
+      isEnabled: true
+      isSecret: false
+      order: 0
+bodyType: raw
+bodyContentType: text
+bodyData:
+    rawText: |-
+        {
+          "user_id": {{user_id}}
+        }
+authType: bearer
+isAuthOverridden: true
+authConfigData: |-
+    {
+      "bearerToken": "{{REDACTED}}"
+    }
+prescript: ""
+postscript: ""
+skipParentScripts: false
+variables: []

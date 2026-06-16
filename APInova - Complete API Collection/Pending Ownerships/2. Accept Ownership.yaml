@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
+# Restk Request
+
+id: "325310386377064471"
+version: 1
+name: 2. Accept Ownership
+method: POST
+url: '{{base_url}}/api/v0/pending-ownerships/org/{{org_id}}/accept-ownership'
+sortOrder: 1
+description: ""
+folderId: "325310386377064469"
+parameters: []
+headers: []
+bodyType: none
+bodyContentType: ""
+bodyData: ""
+authType: bearer
+isAuthOverridden: true
+authConfigData: |-
+    {
+      "bearerToken": "{{REDACTED}}"
+    }
+prescript: ""
+postscript: ""
+skipParentScripts: false
+variables: []

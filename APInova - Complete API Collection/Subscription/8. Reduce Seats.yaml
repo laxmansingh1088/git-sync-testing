@@ -1,0 +1,37 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
+# Restk Request
+
+id: "325310386381258781"
+version: 1
+name: 8. Reduce Seats
+method: DELETE
+url: '{{base_url}}/api/v0/organizations/{{org_id}}/seats'
+sortOrder: 7
+description: ""
+folderId: "325310386381258772"
+parameters: []
+headers:
+    - id: "A7353477-0E84-403F-8E52-19B7D42F9551"
+      key: Content-Type
+      value: application/json
+      isEnabled: true
+      isSecret: false
+      order: 0
+bodyType: raw
+bodyContentType: json
+bodyData:
+    rawJSON: |-
+        {
+                        "new_total_seats": 10,
+                        "reason": "Team downsizing"
+                      }
+authType: bearer
+isAuthOverridden: true
+authConfigData: |-
+    {
+      "bearerToken": "{{REDACTED}}"
+    }
+prescript: ""
+postscript: ""
+skipParentScripts: false
+variables: []

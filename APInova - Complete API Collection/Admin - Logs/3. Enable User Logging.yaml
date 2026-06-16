@@ -1,0 +1,39 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
+# Restk Request
+
+id: "325310386385453084"
+version: 1
+name: 3. Enable User Logging
+method: POST
+url: '{{base_url}}/api/v0/admin/logs/users/enable'
+sortOrder: 2
+description: ""
+folderId: "325310386385453079"
+parameters: []
+headers:
+    - id: "4086337A-1CBF-41FF-A480-08101C4F68F0"
+      key: Content-Type
+      value: application/json
+      isEnabled: true
+      isSecret: false
+      order: 0
+bodyType: raw
+bodyContentType: text
+bodyData:
+    rawText: |-
+        {
+          "user_id": {{user_id}},
+          "duration_minutes": 60,
+          "log_level": "debug",
+          "reason": "User reported issue"
+        }
+authType: bearer
+isAuthOverridden: true
+authConfigData: |-
+    {
+      "bearerToken": "{{REDACTED}}"
+    }
+prescript: ""
+postscript: ""
+skipParentScripts: false
+variables: []

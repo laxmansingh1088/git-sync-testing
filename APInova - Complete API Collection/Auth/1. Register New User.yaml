@@ -1,0 +1,43 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
+# Restk Request
+
+id: "325310386368675841"
+version: 1
+name: 1. Register New User
+method: POST
+url: '{{base_url}}/api/v0/auth/register'
+sortOrder: 0.5500000001
+description: ""
+folderId: "325310386368675840"
+parameters: []
+headers:
+    - id: "10EE0D3E-B18C-4791-8CC1-4A2411EFC1A8"
+      key: Content-Type
+      value: application/json
+      isEnabled: true
+      isSecret: false
+      order: 0
+bodyType: raw
+bodyContentType: json
+bodyData:
+    rawJSON: |-
+        {
+                        "email": "avril134@example.com",
+                        "full_name": "Test User",
+                        "password": "Backyard@08#"
+                      }
+authType: none
+isAuthOverridden: true
+authConfigData: ""
+prescript: ""
+postscript: |-
+    if (nova.response.status === 201) {
+        const response = nova.response.json();
+        nova.collectionVariables.set('access_token', response.data.access_token);
+        nova.collectionVariables.set('refresh_token', response.data.refresh_token);
+        nova.collectionVariables.set('user_id', String(response.data.user.id));
+        nova.collectionVariables.set('user_email', response.data.user.email);
+    }
+    nova.test('Registration successful', () => nova.expect(nova.response.status).toBe(201));
+skipParentScripts: false
+variables: []

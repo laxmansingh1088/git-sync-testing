@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
+# Restk Request
+
+id: "325310386377064480"
+version: 1
+name: 6. Restore Workspace
+method: POST
+url: '{{base_url}}/api/v0/workspaces/{{workspace_id}}/restore'
+sortOrder: 6
+description: ""
+folderId: "325310386377064472"
+parameters: []
+headers: []
+bodyType: none
+bodyContentType: ""
+bodyData: ""
+authType: bearer
+isAuthOverridden: true
+authConfigData: |-
+    {
+      "bearerToken": "{{REDACTED}}"
+    }
+prescript: ""
+postscript: ""
+skipParentScripts: false
+variables: []

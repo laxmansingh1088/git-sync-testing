@@ -1,0 +1,40 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
+# Restk Request
+
+id: "325310386381258769"
+version: 1
+name: 13. Reorder Variables
+method: PUT
+url: '{{base_url}}/api/v0/environment/environments/{{environment_id}}/variables/reorder'
+sortOrder: 12
+description: ""
+folderId: "325310386381258755"
+parameters: []
+headers:
+    - id: "D715542A-AC61-4E82-8949-6BAFB74D4001"
+      key: Content-Type
+      value: application/json
+      isEnabled: true
+      isSecret: false
+      order: 0
+bodyType: raw
+bodyContentType: json
+bodyData:
+    rawJSON: |-
+        {
+                        "variable_ids": [
+                          "id1",
+                          "id2",
+                          "id3"
+                        ]
+                      }
+authType: bearer
+isAuthOverridden: true
+authConfigData: |-
+    {
+      "bearerToken": "{{REDACTED}}"
+    }
+prescript: ""
+postscript: ""
+skipParentScripts: false
+variables: []

@@ -1,0 +1,38 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
+# Restk Request
+
+id: "325310386385453074"
+version: 1
+name: 2. Update Preferences
+method: PUT
+url: '{{base_url}}/api/v0/email/preferences'
+sortOrder: 1
+description: ""
+folderId: "325310386385453071"
+parameters: []
+headers:
+    - id: "7DB00714-50FC-432F-B274-F8451C77DA98"
+      key: Content-Type
+      value: application/json
+      isEnabled: true
+      isSecret: false
+      order: 0
+bodyType: raw
+bodyContentType: json
+bodyData:
+    rawJSON: |-
+        {
+                        "marketing": false,
+                        "product_updates": true,
+                        "transactional": true
+                      }
+authType: bearer
+isAuthOverridden: true
+authConfigData: |-
+    {
+      "bearerToken": "{{REDACTED}}"
+    }
+prescript: ""
+postscript: ""
+skipParentScripts: false
+variables: []

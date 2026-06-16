@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
+# Restk Request
+
+id: "325310386385453081"
+version: 1
+name: 2. Disable Org Logging
+method: POST
+url: '{{base_url}}/api/v0/admin/logs/organizations/disable'
+sortOrder: 1
+description: ""
+folderId: "325310386385453079"
+parameters: []
+headers:
+    - id: "B54ACEF4-B725-4075-B27D-3C95CB878411"
+      key: Content-Type
+      value: application/json
+      isEnabled: true
+      isSecret: false
+      order: 0
+bodyType: raw
+bodyContentType: text
+bodyData:
+    rawText: |-
+        {
+          "org_id": {{org_id}}
+        }
+authType: bearer
+isAuthOverridden: true
+authConfigData: |-
+    {
+      "bearerToken": "{{REDACTED}}"
+    }
+prescript: ""
+postscript: ""
+skipParentScripts: false
+variables: []

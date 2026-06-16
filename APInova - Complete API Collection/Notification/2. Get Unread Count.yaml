@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
+# Restk Request
+
+id: "325310386385453067"
+version: 1
+name: 2. Get Unread Count
+method: GET
+url: '{{base_url}}/api/v0/notifications/unread-count'
+sortOrder: 1
+description: ""
+folderId: "325310386385453066"
+parameters: []
+headers: []
+bodyType: none
+bodyContentType: ""
+bodyData: ""
+authType: bearer
+isAuthOverridden: true
+authConfigData: |-
+    {
+      "bearerToken": "{{REDACTED}}"
+    }
+prescript: ""
+postscript: ""
+skipParentScripts: false
+variables: []

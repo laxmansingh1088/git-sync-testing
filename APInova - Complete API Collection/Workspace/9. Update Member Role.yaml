@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
+# Restk Request
+
+id: "325310386377064483"
+version: 1
+name: 9. Update Member Role
+method: PUT
+url: '{{base_url}}/api/v0/workspaces/{{workspace_id}}/members/{{member_user_id}}'
+sortOrder: 9
+description: ""
+folderId: "325310386377064472"
+parameters: []
+headers:
+    - id: "0851D328-9EDA-48F2-83DB-12F36252A554"
+      key: Content-Type
+      value: application/json
+      isEnabled: true
+      isSecret: false
+      order: 0
+bodyType: raw
+bodyContentType: json
+bodyData:
+    rawJSON: |-
+        {
+                        "role": "manager"
+                      }
+authType: bearer
+isAuthOverridden: true
+authConfigData: |-
+    {
+      "bearerToken": "{{REDACTED}}"
+    }
+prescript: ""
+postscript: ""
+skipParentScripts: false
+variables: []

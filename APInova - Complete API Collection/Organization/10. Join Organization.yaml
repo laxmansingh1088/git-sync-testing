@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
+# Restk Request
+
+id: "325310386377064452"
+version: 1
+name: 10. Join Organization
+method: POST
+url: '{{base_url}}/api/v0/org/join'
+sortOrder: 9
+description: ""
+folderId: "325310386372870161"
+parameters: []
+headers:
+    - id: "2E725E81-6462-43EE-9E7D-BCAB34F890A8"
+      key: Content-Type
+      value: application/json
+      isEnabled: true
+      isSecret: false
+      order: 0
+bodyType: raw
+bodyContentType: json
+bodyData:
+    rawJSON: |-
+        {
+                        "code": "ABC123"
+                      }
+authType: bearer
+isAuthOverridden: true
+authConfigData: |-
+    {
+      "bearerToken": "{{REDACTED}}"
+    }
+prescript: ""
+postscript: ""
+skipParentScripts: false
+variables: []

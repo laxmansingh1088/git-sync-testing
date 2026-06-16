@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
+# Restk Request
+
+id: "325310386372870156"
+version: 1
+name: 7. List User Sessions
+method: GET
+url: '{{base_url}}/api/v0/auth/sessions'
+sortOrder: 6
+description: ""
+folderId: "325310386368675840"
+parameters: []
+headers: []
+bodyType: none
+bodyContentType: ""
+bodyData: ""
+authType: bearer
+isAuthOverridden: true
+authConfigData: |-
+    {
+      "bearerToken": "{{REDACTED}}"
+    }
+prescript: ""
+postscript: ""
+skipParentScripts: false
+variables: []

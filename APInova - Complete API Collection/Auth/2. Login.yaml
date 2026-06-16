@@ -1,0 +1,50 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
+# Restk Request
+
+id: "325310386372870155"
+version: 1
+name: 2. Login
+method: POST
+url: '{{base_url}}/api/v0/auth/login'
+sortOrder: 1
+description: ""
+folderId: "325310386368675840"
+parameters: []
+headers:
+    - id: "C0868A22-5BB4-43AF-8A3A-F346708CC3AB"
+      key: Content-Type
+      value: application/json
+      isEnabled: true
+      isSecret: false
+      order: 0
+bodyType: raw
+bodyContentType: json
+bodyData:
+    rawJSON: |-
+        {
+                        "device_info": {
+                          "app_version": "1.0.0",
+                          "device_id": "postman-test-device",
+                          "device_name": "Postman Test Client",
+                          "device_type": "desktop",
+                          "os": "macOS",
+                          "os_version": "14.0"
+                        },
+                        "email": "{{user_email}}",
+                        "password": "Backyard@08#"
+                      }
+authType: none
+isAuthOverridden: true
+authConfigData: ""
+prescript: ""
+postscript: |-
+    if (nova.response.status === 200) {
+        const response = nova.response.json();
+        nova.collectionVariables.set('access_token', response.data.access_token);
+        nova.collectionVariables.set('refresh_token', response.data.refresh_token);
+        nova.collectionVariables.set('user_id', String(response.data.user.id));
+        nova.collectionVariables.set('user_email', response.data.user.email);
+    }
+    nova.test('Login successful', () => nova.expect(nova.response.status).toBe(200));
+skipParentScripts: false
+variables: []

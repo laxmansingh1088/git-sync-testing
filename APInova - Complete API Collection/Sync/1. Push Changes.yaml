@@ -1,0 +1,53 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
+# Restk Request
+
+id: "325310386381258752"
+version: 1
+name: 1. Push Changes
+method: POST
+url: '{{base_url}}/api/v0/sync/push'
+sortOrder: 76
+description: ""
+folderId: "325310386377064489"
+parameters: []
+headers:
+    - id: "32F8A1B3-F592-4E7F-A4B0-FAF22D1A7C3B"
+      key: Content-Type
+      value: application/json
+      isEnabled: true
+      isSecret: false
+      order: 0
+bodyType: raw
+bodyContentType: text
+bodyData:
+    rawText: |-
+        {
+          "workspace_id": {{workspace_id}},
+          "device_id": "{{device_id}}",
+          "changes": [
+            {
+              "entity_id": "{{entity_id}}",
+              "entity_type": "collection",
+              "operation": "create",
+              "version": 1,
+              "data": {
+                "name": "New Collection",
+                "workspace_id": {{workspace_id}},
+                "sort_order": 1.0,
+                "is_hidden": false
+              },
+              "changed_fields": ["name", "workspace_id", "sort_order", "is_hidden"],
+              "timestamp": "2024-01-01T00:00:00Z"
+            }
+          ]
+        }
+authType: bearer
+isAuthOverridden: true
+authConfigData: |-
+    {
+      "bearerToken": "{{REDACTED}}"
+    }
+prescript: ""
+postscript: ""
+skipParentScripts: false
+variables: []

@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
+# Restk Request
+
+id: "325310386372870146"
+version: 1
+name: 8. Revoke Session
+method: DELETE
+url: '{{base_url}}/api/v0/auth/sessions/{{session_id}}'
+sortOrder: 7
+description: ""
+folderId: "325310386368675840"
+parameters: []
+headers: []
+bodyType: none
+bodyContentType: ""
+bodyData: ""
+authType: bearer
+isAuthOverridden: true
+authConfigData: |-
+    {
+      "bearerToken": "{{REDACTED}}"
+    }
+prescript: ""
+postscript: ""
+skipParentScripts: false
+variables: []

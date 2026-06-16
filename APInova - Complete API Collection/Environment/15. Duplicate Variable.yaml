@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
+# Restk Request
+
+id: "325310386381258767"
+version: 1
+name: 15. Duplicate Variable
+method: POST
+url: '{{base_url}}/api/v0/environment/environments/{{environment_id}}/variables/{{variable_id}}/duplicate'
+sortOrder: 14
+description: ""
+folderId: "325310386381258755"
+parameters: []
+headers:
+    - id: "4CA59841-F0C6-4807-BC39-09611E444AAC"
+      key: Content-Type
+      value: application/json
+      isEnabled: true
+      isSecret: false
+      order: 0
+bodyType: raw
+bodyContentType: json
+bodyData:
+    rawJSON: |-
+        {
+                        "target_environment_id": "target-env-id"
+                      }
+authType: bearer
+isAuthOverridden: true
+authConfigData: |-
+    {
+      "bearerToken": "{{REDACTED}}"
+    }
+prescript: ""
+postscript: ""
+skipParentScripts: false
+variables: []

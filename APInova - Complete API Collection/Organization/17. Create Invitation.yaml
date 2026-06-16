@@ -1,0 +1,43 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
+# Restk Request
+
+id: "325310386377064461"
+version: 1
+name: 17. Create Invitation
+method: POST
+url: '{{base_url}}/api/v0/org/{{org_id}}/invitations'
+sortOrder: 16
+description: ""
+folderId: "325310386372870161"
+parameters: []
+headers:
+    - id: "8B799323-D436-412D-AD63-2565C407B7E7"
+      key: Content-Type
+      value: application/json
+      isEnabled: true
+      isSecret: false
+      order: 0
+bodyType: raw
+bodyContentType: json
+bodyData:
+    rawJSON: |-
+        {
+                        "email": "invitee@example.com",
+                        "role": "member"
+                      }
+authType: bearer
+isAuthOverridden: true
+authConfigData: |-
+    {
+      "bearerToken": "{{REDACTED}}"
+    }
+prescript: ""
+postscript: |-
+    if (nova.response.status === 201) {
+        const response = nova.response.json();
+        nova.collectionVariables.set('invitation_id', String(response.data.id));
+        nova.collectionVariables.set('invitation_code', response.data.invitation_code);
+    }
+    nova.test('Invitation created', () => nova.expect(nova.response.status).toBe(201));
+skipParentScripts: false
+variables: []

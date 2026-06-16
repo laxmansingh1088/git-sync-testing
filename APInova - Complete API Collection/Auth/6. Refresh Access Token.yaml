@@ -1,0 +1,39 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
+# Restk Request
+
+id: "325310386372870154"
+version: 1
+name: 6. Refresh Access Token
+method: POST
+url: '{{base_url}}/api/v0/auth/refresh'
+sortOrder: 5
+description: ""
+folderId: "325310386368675840"
+parameters: []
+headers:
+    - id: "3C7A4005-94D1-4425-BB49-BE2E78C7583A"
+      key: Content-Type
+      value: application/json
+      isEnabled: true
+      isSecret: false
+      order: 0
+bodyType: raw
+bodyContentType: json
+bodyData:
+    rawJSON: |-
+        {
+                        "refresh_token": "{{refresh_token}}"
+                      }
+authType: none
+isAuthOverridden: true
+authConfigData: ""
+prescript: ""
+postscript: |-
+    if (nova.response.status === 200) {
+        const response = nova.response.json();
+        nova.collectionVariables.set('access_token', response.data.access_token);
+        nova.collectionVariables.set('refresh_token', response.data.refresh_token);
+    }
+    nova.test('Token refresh successful', () => nova.expect(nova.response.status).toBe(200));
+skipParentScripts: false
+variables: []

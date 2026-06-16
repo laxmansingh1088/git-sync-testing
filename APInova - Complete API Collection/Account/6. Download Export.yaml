@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
+# Restk Request
+
+id: "325310386385453065"
+version: 1
+name: 6. Download Export
+method: GET
+url: '{{base_url}}/api/v0/account/export/download'
+sortOrder: 5
+description: ""
+folderId: "325310386385453059"
+parameters:
+    - id: "DB972218-F4AF-4411-9986-38F60A37DAAA"
+      key: token
+      value: export-token
+      isEnabled: true
+      order: 0
+headers: []
+bodyType: none
+bodyContentType: ""
+bodyData: ""
+authType: none
+isAuthOverridden: true
+authConfigData: ""
+prescript: ""
+postscript: ""
+skipParentScripts: false
+variables: []

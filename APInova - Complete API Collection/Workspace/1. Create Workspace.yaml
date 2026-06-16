@@ -1,0 +1,44 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
+# Restk Request
+
+id: "325310386377064475"
+version: 1
+name: 1. Create Workspace
+method: POST
+url: '{{base_url}}/api/v0/workspaces'
+sortOrder: 59
+description: ""
+folderId: "325310386377064472"
+parameters: []
+headers:
+    - id: "0538F0D5-B20C-4BC6-A626-E10273B8F9C5"
+      key: Content-Type
+      value: application/json
+      isEnabled: true
+      isSecret: false
+      order: 0
+bodyType: raw
+bodyContentType: json
+bodyData:
+    rawJSON: |-
+        {
+                        "description": "Workspace description",
+                        "name": "My Workspace",
+                        "theme_color": "#FF5733",
+                        "workspace_type": "non-shared"
+                      }
+authType: bearer
+isAuthOverridden: true
+authConfigData: |-
+    {
+      "bearerToken": "{{REDACTED}}"
+    }
+prescript: ""
+postscript: |-
+    if (nova.response.status === 201) {
+        const response = nova.response.json();
+        nova.collectionVariables.set('workspace_id', String(response.data.id));
+    }
+    nova.test('Workspace created', () => nova.expect(nova.response.status).toBe(201));
+skipParentScripts: false
+variables: []

@@ -1,0 +1,39 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
+# Restk Request
+
+id: "325310386381258766"
+version: 1
+name: 11. Update Variable
+method: PUT
+url: '{{base_url}}/api/v0/environment/environments/{{environment_id}}/variables/{{variable_id}}'
+sortOrder: 10
+description: ""
+folderId: "325310386381258755"
+parameters: []
+headers:
+    - id: "ED209546-8030-48EE-A929-C58558EE963C"
+      key: Content-Type
+      value: application/json
+      isEnabled: true
+      isSecret: false
+      order: 0
+bodyType: raw
+bodyContentType: json
+bodyData:
+    rawJSON: |-
+        {
+                        "enabled": true,
+                        "key": "API_URL",
+                        "type": "default",
+                        "value": "https://api-v2.example.com"
+                      }
+authType: bearer
+isAuthOverridden: true
+authConfigData: |-
+    {
+      "bearerToken": "{{REDACTED}}"
+    }
+prescript: ""
+postscript: ""
+skipParentScripts: false
+variables: []

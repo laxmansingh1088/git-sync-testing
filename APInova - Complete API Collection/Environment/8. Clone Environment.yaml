@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
+# Restk Request
+
+id: "325310386381258765"
+version: 1
+name: 8. Clone Environment
+method: POST
+url: '{{base_url}}/api/v0/environment/environments/{{environment_id}}/clone'
+sortOrder: 7
+description: ""
+folderId: "325310386381258755"
+parameters: []
+headers:
+    - id: "90092EE8-57F8-4152-8226-ADC725B8E335"
+      key: Content-Type
+      value: application/json
+      isEnabled: true
+      isSecret: false
+      order: 0
+bodyType: raw
+bodyContentType: json
+bodyData:
+    rawJSON: |-
+        {
+                        "new_name": "Cloned Environment"
+                      }
+authType: bearer
+isAuthOverridden: true
+authConfigData: |-
+    {
+      "bearerToken": "{{REDACTED}}"
+    }
+prescript: ""
+postscript: ""
+skipParentScripts: false
+variables: []

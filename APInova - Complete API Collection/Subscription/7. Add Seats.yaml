@@ -1,0 +1,37 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
+# Restk Request
+
+id: "325310386381258777"
+version: 1
+name: 7. Add Seats
+method: POST
+url: '{{base_url}}/api/v0/organizations/{{org_id}}/seats'
+sortOrder: 6
+description: ""
+folderId: "325310386381258772"
+parameters: []
+headers:
+    - id: "304EAAEF-A3F9-40D4-B09B-EBD9476B3E99"
+      key: Content-Type
+      value: application/json
+      isEnabled: true
+      isSecret: false
+      order: 0
+bodyType: raw
+bodyContentType: json
+bodyData:
+    rawJSON: |-
+        {
+                        "reason": "Team expansion",
+                        "seats_to_add": 5
+                      }
+authType: bearer
+isAuthOverridden: true
+authConfigData: |-
+    {
+      "bearerToken": "{{REDACTED}}"
+    }
+prescript: ""
+postscript: ""
+skipParentScripts: false
+variables: []

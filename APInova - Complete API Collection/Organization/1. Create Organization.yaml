@@ -1,0 +1,42 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
+# Restk Request
+
+id: "325310386372870162"
+version: 1
+name: 1. Create Organization
+method: POST
+url: '{{base_url}}/api/v0/org'
+sortOrder: 31
+description: ""
+folderId: "325310386372870161"
+parameters: []
+headers:
+    - id: "672A0AF9-ACAF-4A8F-A203-C07BC3B8DE1D"
+      key: Content-Type
+      value: application/json
+      isEnabled: true
+      isSecret: false
+      order: 0
+bodyType: raw
+bodyContentType: json
+bodyData:
+    rawJSON: |-
+        {
+                        "description": "Organization description",
+                        "name": "My Organization"
+                      }
+authType: bearer
+isAuthOverridden: true
+authConfigData: |-
+    {
+      "bearerToken": "{{REDACTED}}"
+    }
+prescript: ""
+postscript: |-
+    if (nova.response.status === 201) {
+        const response = nova.response.json();
+        nova.collectionVariables.set('org_id', String(response.data.id));
+    }
+    nova.test('Organization created', () => nova.expect(nova.response.status).toBe(201));
+skipParentScripts: false
+variables: []

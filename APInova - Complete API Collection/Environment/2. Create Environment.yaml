@@ -1,0 +1,42 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
+# Restk Request
+
+id: "325310386381258760"
+version: 1
+name: 2. Create Environment
+method: POST
+url: '{{base_url}}/api/v0/environment/workspaces/{{workspace_id}}/environments'
+sortOrder: 1
+description: ""
+folderId: "325310386381258755"
+parameters: []
+headers:
+    - id: "62C54EBB-149C-4266-AD16-285E2B4A3489"
+      key: Content-Type
+      value: application/json
+      isEnabled: true
+      isSecret: false
+      order: 0
+bodyType: raw
+bodyContentType: json
+bodyData:
+    rawJSON: |-
+        {
+                        "description": "Development environment",
+                        "name": "Development"
+                      }
+authType: bearer
+isAuthOverridden: true
+authConfigData: |-
+    {
+      "bearerToken": "{{REDACTED}}"
+    }
+prescript: ""
+postscript: |-
+    if (nova.response.status === 201) {
+        const response = nova.response.json();
+        nova.collectionVariables.set('environment_id', String(response.data.id));
+    }
+    nova.test('Environment created', () => nova.expect(nova.response.status).toBe(201));
+skipParentScripts: false
+variables: []

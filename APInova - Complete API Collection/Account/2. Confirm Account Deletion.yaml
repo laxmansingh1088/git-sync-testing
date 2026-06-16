@@ -1,0 +1,33 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
+# Restk Request
+
+id: "325310386385453060"
+version: 1
+name: 2. Confirm Account Deletion
+method: DELETE
+url: '{{base_url}}/api/v0/account/delete/confirm'
+sortOrder: 1
+description: ""
+folderId: "325310386385453059"
+parameters: []
+headers:
+    - id: "99257972-127E-4ECE-A31E-B76A2F80B37C"
+      key: Content-Type
+      value: application/json
+      isEnabled: true
+      isSecret: false
+      order: 0
+bodyType: raw
+bodyContentType: json
+bodyData:
+    rawJSON: |-
+        {
+                        "token": "deletion-token-from-email"
+                      }
+authType: none
+isAuthOverridden: true
+authConfigData: ""
+prescript: ""
+postscript: ""
+skipParentScripts: false
+variables: []

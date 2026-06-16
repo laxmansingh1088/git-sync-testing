@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
+# Restk Request
+
+id: "325310386377064490"
+version: 1
+name: 2. Pull Changes
+method: GET
+url: '{{base_url}}/api/v0/sync/pull'
+sortOrder: 1
+description: ""
+folderId: "325310386377064489"
+parameters:
+    - id: "E9A45505-68DE-42B0-A7B6-3E0E39659464"
+      key: workspace_id
+      value: '{{workspace_id}}'
+      isEnabled: true
+      order: 0
+    - id: "93FDE2B3-C6DA-43F8-9B7E-E80B40C5F136"
+      key: since
+      value: "0"
+      isEnabled: true
+      order: 1
+headers: []
+bodyType: none
+bodyContentType: ""
+bodyData: ""
+authType: bearer
+isAuthOverridden: true
+authConfigData: |-
+    {
+      "bearerToken": "{{REDACTED}}"
+    }
+prescript: ""
+postscript: ""
+skipParentScripts: false
+variables: []

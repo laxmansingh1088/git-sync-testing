@@ -1,0 +1,31 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
+# Restk Request
+
+id: "325310386381258753"
+version: 1
+name: 4. Get Sync Status
+method: GET
+url: '{{base_url}}/api/v0/sync/status'
+sortOrder: 3
+description: ""
+folderId: "325310386377064489"
+parameters:
+    - id: "8272D5C3-293A-4AF4-B2C0-135703878438"
+      key: workspace_id
+      value: '{{workspace_id}}'
+      isEnabled: true
+      order: 0
+headers: []
+bodyType: none
+bodyContentType: ""
+bodyData: ""
+authType: bearer
+isAuthOverridden: true
+authConfigData: |-
+    {
+      "bearerToken": "{{REDACTED}}"
+    }
+prescript: ""
+postscript: ""
+skipParentScripts: false
+variables: []

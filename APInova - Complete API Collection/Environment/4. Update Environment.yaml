@@ -1,0 +1,37 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
+# Restk Request
+
+id: "325310386381258757"
+version: 1
+name: 4. Update Environment
+method: PUT
+url: '{{base_url}}/api/v0/environment/environments/{{environment_id}}'
+sortOrder: 3
+description: ""
+folderId: "325310386381258755"
+parameters: []
+headers:
+    - id: "CAECE239-7A41-4FB1-B83A-E24A7F7EF522"
+      key: Content-Type
+      value: application/json
+      isEnabled: true
+      isSecret: false
+      order: 0
+bodyType: raw
+bodyContentType: json
+bodyData:
+    rawJSON: |-
+        {
+                        "description": "Updated description",
+                        "name": "Updated Environment"
+                      }
+authType: bearer
+isAuthOverridden: true
+authConfigData: |-
+    {
+      "bearerToken": "{{REDACTED}}"
+    }
+prescript: ""
+postscript: ""
+skipParentScripts: false
+variables: []

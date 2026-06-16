@@ -1,0 +1,40 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
+# Restk Request
+
+id: "325310386381258784"
+version: 1
+name: 3. Create Checkout (Organization)
+method: POST
+url: '{{base_url}}/api/v0/billing/checkout'
+sortOrder: 2
+description: ""
+folderId: "325310386381258783"
+parameters: []
+headers:
+    - id: "79E4694C-25B0-47B6-9780-AE8C64887FDA"
+      key: Content-Type
+      value: application/json
+      isEnabled: true
+      isSecret: false
+      order: 0
+bodyType: raw
+bodyContentType: json
+bodyData:
+    rawJSON: |-
+        {
+                        "billing_period": "monthly",
+                        "org_id": "{{org_id}}",
+                        "plan_id": "org_team",
+                        "plan_type": "organization",
+                        "seats": 5
+                      }
+authType: bearer
+isAuthOverridden: true
+authConfigData: |-
+    {
+      "bearerToken": "{{REDACTED}}"
+    }
+prescript: ""
+postscript: ""
+skipParentScripts: false
+variables: []

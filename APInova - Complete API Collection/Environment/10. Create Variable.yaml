@@ -1,0 +1,44 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
+# Restk Request
+
+id: "325310386381258763"
+version: 1
+name: 10. Create Variable
+method: POST
+url: '{{base_url}}/api/v0/environment/environments/{{environment_id}}/variables'
+sortOrder: 9
+description: ""
+folderId: "325310386381258755"
+parameters: []
+headers:
+    - id: "A3C90CA1-7657-4078-8767-3B0104015363"
+      key: Content-Type
+      value: application/json
+      isEnabled: true
+      isSecret: false
+      order: 0
+bodyType: raw
+bodyContentType: json
+bodyData:
+    rawJSON: |-
+        {
+                        "enabled": true,
+                        "key": "API_URL",
+                        "type": "default",
+                        "value": "https://api.example.com"
+                      }
+authType: bearer
+isAuthOverridden: true
+authConfigData: |-
+    {
+      "bearerToken": "{{REDACTED}}"
+    }
+prescript: ""
+postscript: |-
+    if (nova.response.status === 201) {
+        const response = nova.response.json();
+        nova.collectionVariables.set('variable_id', String(response.data.id));
+    }
+    nova.test('Variable created', () => nova.expect(nova.response.status).toBe(201));
+skipParentScripts: false
+variables: []

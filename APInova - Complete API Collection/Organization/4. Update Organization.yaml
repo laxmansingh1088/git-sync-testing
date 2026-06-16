@@ -1,0 +1,37 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
+# Restk Request
+
+id: "325310386372870165"
+version: 1
+name: 4. Update Organization
+method: PUT
+url: '{{base_url}}/api/v0/org/{{org_id}}'
+sortOrder: 3
+description: ""
+folderId: "325310386372870161"
+parameters: []
+headers:
+    - id: "4D96C071-7042-466B-851B-591A74CDCB6A"
+      key: Content-Type
+      value: application/json
+      isEnabled: true
+      isSecret: false
+      order: 0
+bodyType: raw
+bodyContentType: json
+bodyData:
+    rawJSON: |-
+        {
+                        "description": "Updated description",
+                        "name": "Updated Organization Name"
+                      }
+authType: bearer
+isAuthOverridden: true
+authConfigData: |-
+    {
+      "bearerToken": "{{REDACTED}}"
+    }
+prescript: ""
+postscript: ""
+skipParentScripts: false
+variables: []

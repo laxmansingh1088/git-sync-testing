@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
+# Restk Request
+
+id: "325310386385453061"
+version: 1
+name: 1. Request Account Deletion
+method: POST
+url: '{{base_url}}/api/v0/account/delete'
+sortOrder: 115
+description: ""
+folderId: "325310386385453059"
+parameters: []
+headers:
+    - id: "BAB86BFC-030C-47F6-8D7E-29C15560A5C3"
+      key: Content-Type
+      value: application/json
+      isEnabled: true
+      isSecret: false
+      order: 0
+bodyType: raw
+bodyContentType: json
+bodyData:
+    rawJSON: |-
+        {
+                        "password": "YourPassword123!"
+                      }
+authType: bearer
+isAuthOverridden: true
+authConfigData: |-
+    {
+      "bearerToken": "{{REDACTED}}"
+    }
+prescript: ""
+postscript: ""
+skipParentScripts: false
+variables: []

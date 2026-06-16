@@ -1,0 +1,38 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
+# Restk Request
+
+id: "325310386385453076"
+version: 1
+name: 1. Check Permission
+method: POST
+url: '{{base_url}}/api/v0/permissions/check'
+sortOrder: 131
+description: ""
+folderId: "325310386385453075"
+parameters: []
+headers:
+    - id: "3AD3C659-2737-4ECE-8733-45F4917BAC86"
+      key: Content-Type
+      value: application/json
+      isEnabled: true
+      isSecret: false
+      order: 0
+bodyType: raw
+bodyContentType: text
+bodyData:
+    rawText: |-
+        {
+          "resource_type": "workspace",
+          "resource_id": {{workspace_id}},
+          "action": "edit"
+        }
+authType: bearer
+isAuthOverridden: true
+authConfigData: |-
+    {
+      "bearerToken": "{{REDACTED}}"
+    }
+prescript: ""
+postscript: ""
+skipParentScripts: false
+variables: []

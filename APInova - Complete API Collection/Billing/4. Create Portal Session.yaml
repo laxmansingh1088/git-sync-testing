@@ -1,0 +1,37 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
+# Restk Request
+
+id: "325310386385453057"
+version: 1
+name: 4. Create Portal Session
+method: POST
+url: '{{base_url}}/api/v0/billing/portal'
+sortOrder: 3
+description: ""
+folderId: "325310386381258783"
+parameters: []
+headers:
+    - id: "D9E77258-04B7-4FB0-868C-F6C7B4E54263"
+      key: Content-Type
+      value: application/json
+      isEnabled: true
+      isSecret: false
+      order: 0
+bodyType: raw
+bodyContentType: json
+bodyData:
+    rawJSON: |-
+        {
+                        "org_id": "{{org_id}}",
+                        "redirect_url": "https://app.example.com/settings/billing"
+                      }
+authType: bearer
+isAuthOverridden: true
+authConfigData: |-
+    {
+      "bearerToken": "{{REDACTED}}"
+    }
+prescript: ""
+postscript: ""
+skipParentScripts: false
+variables: []

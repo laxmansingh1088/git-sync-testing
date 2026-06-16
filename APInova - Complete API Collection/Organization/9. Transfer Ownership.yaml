@@ -1,0 +1,37 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
+# Restk Request
+
+id: "325310386377064451"
+version: 1
+name: 9. Transfer Ownership
+method: POST
+url: '{{base_url}}/api/v0/org/{{org_id}}/transfer'
+sortOrder: 8
+description: ""
+folderId: "325310386372870161"
+parameters: []
+headers:
+    - id: "4DD45CC6-2D99-44C2-9E73-A2ABEE9F0ADD"
+      key: Content-Type
+      value: application/json
+      isEnabled: true
+      isSecret: false
+      order: 0
+bodyType: raw
+bodyContentType: json
+bodyData:
+    rawJSON: |-
+        {
+                        "new_owner_id": "{{member_user_id}}",
+                        "password": "YourPassword123!"
+                      }
+authType: bearer
+isAuthOverridden: true
+authConfigData: |-
+    {
+      "bearerToken": "{{REDACTED}}"
+    }
+prescript: ""
+postscript: ""
+skipParentScripts: false
+variables: []

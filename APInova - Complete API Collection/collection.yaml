@@ -1,0 +1,90 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/collection.schema.json
+# Restk Collection
+
+id: "325310386364481536"
+version: 1
+name: APInova - Complete API Collection
+sortOrder: 1
+isHidden: false
+isSharedWithAI: false
+authType: bearer
+authConfigData: |-
+    {
+      "bearerToken": "{{REDACTED}}"
+    }
+prescript: console.log('Request:', nova.request.method, nova.request.url);
+postscript: |-
+    nova.test('Response time < 2000ms', () => nova.expect(nova.response.responseTime).toBeLessThan(2000));
+    nova.test('Content-Type is JSON', () => {
+        const contentType = nova.response.getHeader('Content-Type');
+        if (contentType) nova.expect(contentType).toContain('application/json');
+    });
+variables:
+    - id: "E8A0C957-1064-56DE-ADC0-BBA6DA7CC6A8"
+      key: base_url
+      order: 0
+      enabled: true
+    - id: "EB1B7C96-8333-5EBC-B83A-12C3A9E88818"
+      key: access_token
+      order: 1
+      enabled: true
+    - id: "E3EC82E4-973C-5048-847E-3FB497C3BD29"
+      key: refresh_token
+      order: 2
+      enabled: true
+    - id: "78E440AA-3430-5E79-B1C0-48E135558318"
+      key: user_id
+      order: 3
+      enabled: true
+    - id: "B9B70778-09F1-5370-BAE7-DD601965A5D6"
+      key: user_email
+      order: 4
+      enabled: true
+    - id: "9BAA3184-385B-577B-B1EE-E7E8DFE04C02"
+      key: org_id
+      order: 5
+      enabled: true
+    - id: "75CADFF3-A3C7-5A49-A669-ED4CEE9AC67D"
+      key: workspace_id
+      order: 6
+      enabled: true
+    - id: "F51D4368-BD9C-5713-A8A5-A576E73A6204"
+      key: device_id
+      order: 7
+      enabled: true
+    - id: "1DF2B435-3C17-5A04-AC71-70D4164D2889"
+      key: environment_id
+      order: 8
+      enabled: true
+    - id: "11C369BE-0E59-5D44-A085-DA6261955B7A"
+      key: variable_id
+      order: 9
+      enabled: true
+    - id: "BF1067A0-6C1E-5AA6-B918-28B7BD0FF1CA"
+      key: collection_id
+      order: 10
+      enabled: true
+    - id: "D19EDC0F-ABA9-5163-844B-6D3A92678956"
+      key: entity_id
+      order: 11
+      enabled: true
+    - id: "A770C0D5-AA39-56AB-BAE4-7B9FCB0C5708"
+      key: session_id
+      order: 12
+      enabled: true
+    - id: "45BB006C-14B5-57CE-AFCB-6A98B385CD8A"
+      key: invitation_id
+      order: 13
+      enabled: true
+    - id: "F586B592-C2CD-50A3-BA4B-59C88480D28D"
+      key: invitation_code
+      order: 14
+      enabled: true
+    - id: "8F1547EB-86A9-59F6-9266-9D763EA5B4F7"
+      key: member_user_id
+      order: 15
+      enabled: true
+    - id: "9B3EE045-E578-5F9D-97E7-F3E14C5432A7"
+      key: notification_id
+      order: 16
+      enabled: true

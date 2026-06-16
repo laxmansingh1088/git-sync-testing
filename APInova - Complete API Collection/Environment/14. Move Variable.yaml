@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
+# Restk Request
+
+id: "325310386381258768"
+version: 1
+name: 14. Move Variable
+method: POST
+url: '{{base_url}}/api/v0/environment/environments/{{environment_id}}/variables/{{variable_id}}/move'
+sortOrder: 13
+description: ""
+folderId: "325310386381258755"
+parameters: []
+headers:
+    - id: "22B73FCD-11B7-44A3-B5E4-13FE825593A4"
+      key: Content-Type
+      value: application/json
+      isEnabled: true
+      isSecret: false
+      order: 0
+bodyType: raw
+bodyContentType: json
+bodyData:
+    rawJSON: |-
+        {
+                        "target_environment_id": "target-env-id"
+                      }
+authType: bearer
+isAuthOverridden: true
+authConfigData: |-
+    {
+      "bearerToken": "{{REDACTED}}"
+    }
+prescript: ""
+postscript: ""
+skipParentScripts: false
+variables: []

@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
+# Restk Request
+
+id: "325310386372870153"
+version: 1
+name: 4. Update User Profile
+method: PUT
+url: '{{base_url}}/api/v0/auth/me'
+sortOrder: 3
+description: ""
+folderId: "325310386368675840"
+parameters: []
+headers:
+    - id: "60B5F533-2E5F-4858-86B7-BA080D0F6E2F"
+      key: Content-Type
+      value: application/json
+      isEnabled: true
+      isSecret: false
+      order: 0
+bodyType: raw
+bodyContentType: json
+bodyData:
+    rawJSON: |-
+        {
+                        "full_name": "Updated Name nishhh"
+                      }
+authType: bearer
+isAuthOverridden: true
+authConfigData: |-
+    {
+      "bearerToken": "{{REDACTED}}"
+    }
+prescript: ""
+postscript: ""
+skipParentScripts: false
+variables: []
