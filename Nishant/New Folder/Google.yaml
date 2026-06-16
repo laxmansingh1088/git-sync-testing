@@ -4,7 +4,7 @@
 id: "0"
 version: 1
 name: Google
-method: GET
+method: PUT
 url: https://www.google.com
 sortOrder: 0.9640882816
 description: "111111"
