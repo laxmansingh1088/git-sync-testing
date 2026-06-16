@@ -32,7 +32,7 @@ authConfigData: |-
     {
       "apiKeyLocation": "header",
       "apiKeyName": "niss",
-      "apiKeyValue": ""
+      "apiKeyValue": "nishh"
     }
 prescript: lax
 postscript: lax
