@@ -4,7 +4,7 @@
 id: "0"
 version: 1
 name: Google
-method: OPTIONS
+method: DELETE
 url: https://www.google.com
 sortOrder: 0.9640882816
 description: "111111"
@@ -26,9 +26,14 @@ bodyType: raw
 bodyContentType: text
 bodyData:
     rawText: Helloooo
-authType: inherit
-isAuthOverridden: false
-authConfigData: ""
+authType: apiKey
+isAuthOverridden: true
+authConfigData: |-
+    {
+      "apiKeyLocation": "header",
+      "apiKeyName": "niss",
+      "apiKeyValue": ""
+    }
 prescript: lax
 postscript: lax
 skipParentScripts: false
