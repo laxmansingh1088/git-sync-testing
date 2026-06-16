@@ -21,7 +21,6 @@ headers: []
 bodyType: none
 bodyContentType: ""
 bodyData: ""
-authType: bearer
 authType: jwt
 isAuthOverridden: true
 authConfigData: |-
