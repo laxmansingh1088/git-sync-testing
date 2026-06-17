@@ -7,7 +7,6 @@ name: mm
 variables:
     - id: "325572832849301504"
       key: url
-      value: https://www.google.com
-      type: default
+      type: secret
       enabled: true
       order: 0
