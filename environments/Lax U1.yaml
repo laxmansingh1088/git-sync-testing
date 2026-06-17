@@ -3,7 +3,11 @@
 
 id: "322065319625490456"
 version: 1
+<<<<<<<< HEAD:environments/Lax U2.yaml
 name: Lax U2
+========
+name: Lax U1
+>>>>>>>> 46ff25442020812a614c842985a3b8776e1eb611:environments/Lax U1.yaml
 variables:
     - id: "325572832849301504"
       key: url
