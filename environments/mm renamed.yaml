@@ -4,15 +4,4 @@
 id: "325327596616695809"
 version: 1
 name: mm renamed
-variables:
-    - id: "322065319625490457"
-      key: ghp_uoR12SMGzvDG2KgT5I9Mugr2C0CQsu3yI9uN
-      type: secret
-      enabled: true
-      order: 0
-    - id: "322065319625490458"
-      key: baseeurl
-      value: "1111"
-      type: default
-      enabled: true
-      order: 1
+variables: []
