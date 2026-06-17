@@ -3,7 +3,11 @@
 
 id: "325593437569024000"
 version: 1
+<<<<<<<< HEAD:New Collection 344444 --33/Lax Folder -- 33/folder.yaml
 name: Lax Folder -- 33
+========
+name: Lax Folder -- 22
+>>>>>>>> 9647740bc087ff3053f8305f6981ff3d44d828fe:New Collection 344444 --33/Lax Folder -- 22/folder.yaml
 sortOrder: 1.22304
 parentCollectionId: "325588032327516160"
 authType: inherit
