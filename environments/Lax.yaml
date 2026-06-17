@@ -3,10 +3,11 @@
 
 id: "322065319625490456"
 version: 1
-name: mm
+name: Lax
 variables:
     - id: "325572832849301504"
       key: url
-      type: secret
+      value: https://www.google.com
+      type: default
       enabled: true
       order: 0
