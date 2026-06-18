@@ -1,0 +1,7 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/environment.schema.json
+# Restk Environment
+
+id: "326072747706810368"
+version: 1
+name: N2
+variables: []

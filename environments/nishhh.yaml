@@ -91,3 +91,8 @@ variables:
       type: secret
       enabled: true
       order: 16
+    - id: "325947578082394112"
+      key: GITHUB_TOKEN_17
+      type: secret
+      enabled: true
+      order: 17

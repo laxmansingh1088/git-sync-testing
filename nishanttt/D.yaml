@@ -1,14 +1,14 @@
 # yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
 # Restk Request
 
-id: "324919218283741184"
+id: "326069745478533120"
 version: 1
-name: GET New Request
-method: PUT
+name: D
+method: GET
 url: ""
-sortOrder: 1.82816
+sortOrder: 2.0781724224
 description: ""
-folderId: "322065319604518919"
+collectionId: "322065319600324610"
 parameters: []
 headers: []
 bodyType: none
@@ -21,3 +21,4 @@ prescript: ""
 postscript: ""
 skipParentScripts: false
 variables: []
+protocolType: websocket

@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
+# Restk Request
+
+id: "326072860797829121"
+version: 1
+name: Untitled Request
+method: GET
+url: https://jsonplaceholder.typicode.com/posts
+sortOrder: 0.82816
+description: ""
+folderId: "322065319604518919"
+parameters: []
+headers: []
+bodyType: none
+bodyContentType: ""
+bodyData: ""
+authType: inherit
+isAuthOverridden: false
+authConfigData: ""
+prescript: ""
+postscript: ""
+skipParentScripts: false
+variables: []

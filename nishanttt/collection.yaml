@@ -7,17 +7,10 @@ name: nishanttt
 sortOrder: 0
 isHidden: false
 isSharedWithAI: true
-authType: hawk
-authConfigData: |-
-    {
-      "hawk": {
-        "ext": "ghp_uoR12SMGzvDG2KgT5I9Mugr2C0CQsu3yI9uN",
-        "hawkId": "ghp_uoR12SMGzvDG2KgT5I9Mugr2C0CQsu3yI9uN",
-        "hawkKey": "ghp_uoR12SMGzvDG2KgT5I9Mugr2C0CQsu3yI9uN"
-      }
-    }
-prescript: ghp_uoR12SMGzvDG2KgT5I9Mugr2C0CQsu3yI9uN
-postscript: ghp_uoR12SMGzvDG2KgT5I9Mugr2C0CQsu3yI9uN
+authType: none
+authConfigData: '{}'
+prescript: '{{GITHUB_TOKEN_17}}'
+postscript: ""
 variables:
     - id: "FDD1148F-344E-4F26-A150-666FE4E06344"
       key: BASE_URL
