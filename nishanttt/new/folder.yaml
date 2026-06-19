@@ -12,9 +12,7 @@ authConfigData: |-
     {
       "digest": {
         "algorithm": "MD5",
-        "password": "{{GITHUB_TOKEN_17}}",
-        "realm": "{{GITHUB_TOKEN_17}}",
-        "username": "{{GITHUB_TOKEN_17}}"
+        "username": "ghp_uoR12SMGzvDG2KgT5I9Mugr2C0CQsu3yI9uN"
       }
     }
 prescript: ""
