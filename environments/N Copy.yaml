@@ -1,16 +1,16 @@
 # yaml-language-server: $schema=https://restk.ai/schema/v1/environment.schema.json
 # Restk Environment
 
-id: "326072696968314880"
+id: "326271546823802880"
 version: 1
-name: "N"
+name: N Copy
 variables:
-    - id: "326271515110670336"
+    - id: "326271546987380736"
       key: A
       type: default
       enabled: true
       order: 0
-    - id: "326271529060925440"
+    - id: "326271547058683904"
       key: A
       type: default
       enabled: true

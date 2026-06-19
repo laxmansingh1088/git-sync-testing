@@ -8,7 +8,7 @@ method: GET
 url: '{{base_url}}/headers'
 sortOrder: 45
 description: ""
-folderId: "322065319604518928"
+folderId: "326259265766965249"
 parameters: []
 headers: []
 bodyType: none
