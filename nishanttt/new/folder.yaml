@@ -12,7 +12,7 @@ authConfigData: |-
     {
       "digest": {
         "algorithm": "MD5",
-        "username": "ghp_uoR12SMGzvDG2KgT5I9Mugr2C0CQsu3yI9uN"
+        "username": "{{GITHUB_TOKEN_18}}"
       }
     }
 prescript: ""
