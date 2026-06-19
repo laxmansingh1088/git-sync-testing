@@ -1,18 +1,7 @@
 # yaml-language-server: $schema=https://restk.ai/schema/v1/environment.schema.json
 # Restk Environment
 
-id: "322065319625490456"
+id: "326185031720501248"
 version: 1
 name: nishnt-ghpuor12smgzvdg2kgt5i9mugr2c0cqsu3yi9unsca
-variables:
-    - id: "322065319625490457"
-      key: ghp_uoR12SMGzvDG2KgT5I9Mugr2C0CQsu3yI9uN
-      value: ghp_uoR12SMGzvDG2KgT5I9Mugr2C0CQsu3yI9uN
-      type: default
-      enabled: true
-      order: 0
-    - id: "322065319625490458"
-      key: baseeurl
-      type: secret
-      enabled: true
-      order: 1
+variables: []
