@@ -3,7 +3,7 @@
 
 id: "325310386368675841"
 version: 1
-name: 1. Register New User
+name: 1. Register New Userf
 method: POST
 url: '{{base_url}}/api/v0/auth/register'
 sortOrder: 0.5500000001
