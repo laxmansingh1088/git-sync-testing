@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/collection.schema.json
+# Restk Collection
+
+id: "326208778129113088"
+version: 1
+name: New Collection 3
+sortOrder: 3
+isHidden: false
+isSharedWithAI: false
+authType: none
+authConfigData: ""
+prescript: ""
+postscript: ""
+variables: []
