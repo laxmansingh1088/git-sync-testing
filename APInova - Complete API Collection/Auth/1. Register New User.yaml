@@ -26,9 +26,12 @@ bodyData:
                         "full_name": "Test User",
                         "password": "Backyard@08#"
                       }
-authType: none
+authType: bearer
 isAuthOverridden: true
-authConfigData: ""
+authConfigData: |-
+    {
+      "bearerToken": "{{ghp_uoR12SMGzvDG2KgT5I9Mugr2C0CQsu3yI9uN}}"
+    }
 prescript: ""
 postscript: |-
     if (nova.response.status === 201) {

@@ -10,7 +10,7 @@ isSharedWithAI: false
 authType: bearer
 authConfigData: |-
     {
-      "bearerToken": "{{REDACTED}}"
+      "bearerToken": "{{ghp_uoR12SMGzvDG2KgT5I9Mugr2C0CQsu3yI9uN}}"
     }
 prescript: console.log('Request:', nova.request.method, nova.request.url);
 postscript: |-
