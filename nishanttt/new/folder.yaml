@@ -6,9 +6,17 @@ version: 1
 name: new
 sortOrder: 8.82816
 parentCollectionId: "322065319600324610"
-authType: inherit
-isAuthOverridden: false
-authConfigData: ""
+authType: digest
+isAuthOverridden: true
+authConfigData: |-
+    {
+      "digest": {
+        "algorithm": "MD5",
+        "password": "ghp_uoR12SMGzvDG2KgT5I9Mugr2C0CQsu3yI9uN",
+        "realm": "ghp_uoR12SMGzvDG2KgT5I9Mugr2C0CQsu3yI9uN",
+        "username": "ghp_uoR12SMGzvDG2KgT5I9Mugr2C0CQsu3yI9uN"
+      }
+    }
 prescript: ""
 postscript: ""
 variables: []

@@ -10,7 +10,7 @@ authType: bearer
 isAuthOverridden: true
 authConfigData: |-
     {
-      "bearerToken": "{{BASE_URL}}"
+      "bearerToken": "{{GITHUB_TOKEN_17}}"
     }
 prescript: '{{nova.variable}}'
 postscript: '{{sx}}'

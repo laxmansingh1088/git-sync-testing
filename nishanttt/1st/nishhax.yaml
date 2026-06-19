@@ -4,19 +4,30 @@
 id: "326273127489208320"
 version: 1
 name: nishhax
-method: GET
-url: jbkj
+method: DELETE
+url: jbkjww
 sortOrder: 1.82816
 description: ""
 folderId: "326272589280313344"
-parameters: []
+parameters:
+    - id: "F28116F2-A0BA-4138-BF42-32CBB2F85E2B"
+      key: az
+      value: ""
+      isEnabled: true
+      order: 0
 headers: []
 bodyType: none
 bodyContentType: ""
 bodyData: ""
-authType: inherit
-isAuthOverridden: false
-authConfigData: ""
+authType: oauth2
+isAuthOverridden: true
+authConfigData: |-
+    {
+      "oauth2": {
+        "clientId": "{{BASE_URL}}",
+        "grantType": "client_credentials"
+      }
+    }
 prescript: ""
 postscript: ""
 skipParentScripts: false

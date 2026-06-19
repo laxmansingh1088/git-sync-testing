@@ -6,8 +6,8 @@ version: 1
 name: N Copy
 variables:
     - id: "326271546987380736"
-      key: A
-      type: default
+      key: hah
+      type: secret
       enabled: true
       order: 0
     - id: "326271547058683904"
