@@ -1,10 +1,10 @@
 # yaml-language-server: $schema=https://restk.ai/schema/v1/folder.schema.json
 # Restk Folder
 
-id: "0"
+id: "326184688198615040"
 version: 1
 name: New Folder
-sortOrder: 1.22304
+sortOrder: 0.6615222304
 parentCollectionId: "325932261213995008"
 authType: inherit
 isAuthOverridden: false
