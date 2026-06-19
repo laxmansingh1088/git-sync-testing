@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=https://restk.ai/schema/v1/request.schema.json
+# Restk Request
+
+id: "326414330067156992"
+version: 1
+name: GET New Request
+method: GET
+url: ""
+sortOrder: 1.82816
+description: ""
+collectionId: "326414283334221824"
+parameters: []
+headers: []
+bodyType: none
+bodyContentType: ""
+bodyData: ""
+authType: bearer
+isAuthOverridden: true
+authConfigData: |-
+    {
+      "bearerToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.testtoken123"
+    }
+prescript: ""
+postscript: ""
+skipParentScripts: false
+variables: []
